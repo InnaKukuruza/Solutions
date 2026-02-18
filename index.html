@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Інна — експерт з бухгалтерії та нарахування зарплат в Ірландії. Payroll, PAYE, PRSI, USC, Tax Returns. Допомога малому бізнесу, ФОП, стартапам. Зв'язок: +353873558712">
+<meta name="keywords" content="payroll Ireland, PAYE, PRSI, USC, tax returns, бухгалтер Ірландія, нарахування зарплат, Form 11, Corporation Tax, VAT, RCT">
+<meta property="og:title" content="Інна — Payroll & Tax Expert | Ireland">
+<meta property="og:description" content="Profesійна бухгалтерія, Payroll, PAYE, Tax Returns в Ірландії">
+<title>Bookkeeping Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark-green: #0d3320;
+    --mid-green: #1a5c38;
+    --light-green: #2d7a52;
+    --graphite: #1e1e2a;
+    --graphite-light: #2d2d3d;
+    --white: #f9f7f2;
+    --off-white: #ede9e0;
+    --gold: #c8a951;
+    --gold-light: #dfc07a;
+    --emerald: #4caf80;
+    --text-main: #1e1e2a;
+    --text-muted: #5a6272;
+    --border: rgba(200, 169, 81, 0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--text-main);
+    overflow-x: hidden;
+  }
+
+  /* ── LANG SWITCHER ── */
+  .lang-bar {
+    background: var(--graphite);
+    padding: 8px 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+  .lang-btn {
+    background: none; border: 1px solid rgba(200,169,81,0.4);
+    color: var(--off-white); padding: 4px 14px; border-radius: 20px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.8rem;
+    cursor: pointer; transition: all 0.3s;
+    letter-spacing: 0.05em;
+  }
+  .lang-btn.active, .lang-btn:hover {
+    background: var(--gold); color: var(--graphite); border-color: var(--gold);
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(249,247,242,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 70px;
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem; font-weight: 600;
+    color: var(--dark-green);
+    letter-spacing: -0.02em;
+  }
+  .logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--text-main);
+    font-size: 0.875rem; font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 1px; background: var(--gold);
+    transition: width 0.3s;
+  }
+  .nav-links a:hover { color: var(--mid-green); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta {
+    background: var(--dark-green); color: var(--white) !important;
+    padding: 10px 22px; border-radius: 4px;
+    text-decoration: none; font-size: 0.85rem; font-weight: 500;
+    transition: background 0.3s !important;
+    border: none;
+  }
+  .nav-cta:hover { background: var(--mid-green) !important; }
+  .nav-cta::after { display: none !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 2px; background: var(--graphite); transition: all 0.3s; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 92vh;
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--graphite) 60%, #0a1a0f 100%);
+    display: flex; align-items: center;
+    padding: 80px 40px;
+    position: relative; overflow: hidden;
+  }
+  /* When hero is a CTA block at bottom — more compact */
+  .hero.hero-cta {
+    min-height: unset;
+    padding: 80px 40px;
+  }
+  .hero.hero-cta .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    max-width: 760px;
+  }
+  .hero.hero-cta .hero-badge { justify-content: center; }
+  .hero.hero-cta .hero-btns { justify-content: center; }
+  .hero.hero-cta h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); }
+  .hero.hero-cta .hero-sub { max-width: 600px; margin: 0 auto 32px; }
+  .hero::before {
+    content: '';
+    position: absolute; top: -50%; right: -10%;
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    border: 1px solid rgba(200,169,81,0.08);
+    animation: rotate 30s linear infinite;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; top: -20%; right: 5%;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    border: 1px solid rgba(200,169,81,0.12);
+    animation: rotate 20s linear infinite reverse;
+  }
+  @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  .hero-grid {
+    max-width: 1200px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center;
+    position: relative; z-index: 1;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(200,169,81,0.12); border: 1px solid rgba(200,169,81,0.3);
+    color: var(--gold-light); padding: 6px 16px; border-radius: 20px;
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 500; line-height: 1.1;
+    color: var(--white); margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 em { color: var(--gold); font-style: italic; }
+  .hero-sub {
+    color: rgba(249,247,242,0.65); font-size: 1.05rem;
+    line-height: 1.7; margin-bottom: 36px; max-width: 480px;
+  }
+  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold); color: var(--graphite);
+    padding: 14px 28px; border-radius: 4px;
+    font-weight: 600; font-size: 0.9rem; text-decoration: none;
+    transition: all 0.3s; border: none; cursor: pointer;
+    letter-spacing: 0.02em;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,169,81,0.3); }
+  .btn-outline {
+    border: 1px solid rgba(249,247,242,0.4); color: var(--white);
+    padding: 14px 28px; border-radius: 4px;
+    font-weight: 500; font-size: 0.9rem; text-decoration: none;
+    transition: all 0.3s; background: transparent; cursor: pointer;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* Hero Right - Stats */
+  .hero-stats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,81,0.15);
+    border-radius: 12px; padding: 28px 24px;
+    transition: all 0.3s;
+  }
+  .stat-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(200,169,81,0.35); transform: translateY(-4px); }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; font-weight: 600;
+    color: var(--gold); line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label { color: rgba(249,247,242,0.6); font-size: 0.82rem; line-height: 1.4; }
+  .stat-card.featured {
+    grid-column: span 2;
+    background: rgba(200,169,81,0.08);
+    border-color: rgba(200,169,81,0.3);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .stat-icon { font-size: 2rem; }
+
+  /* ── CALCULATORS ── */
+  .calculators {
+    background: var(--off-white);
+    padding: 80px 40px;
+  }
+  .section-label {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em;
+    color: var(--gold); font-weight: 600; margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500; color: var(--dark-green);
+    margin-bottom: 16px; letter-spacing: -0.02em;
+  }
+  .section-sub { color: var(--text-muted); font-size: 1rem; line-height: 1.7; max-width: 520px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+
+  .calc-header { margin-bottom: 48px; }
+
+  .calc-tabs { display: flex; gap: 8px; margin-bottom: 32px; flex-wrap: wrap; }
+  .calc-tab {
+    padding: 10px 22px; border-radius: 4px; cursor: pointer;
+    font-size: 0.875rem; font-weight: 500; border: 1px solid var(--border);
+    background: transparent; color: var(--text-muted);
+    transition: all 0.3s;
+  }
+  .calc-tab.active, .calc-tab:hover {
+    background: var(--dark-green); color: var(--white); border-color: var(--dark-green);
+  }
+
+  .calc-panel { display: none; animation: fadeIn 0.3s ease; }
+  .calc-panel.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .calc-box {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 12px; padding: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  }
+  .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block; font-size: 0.82rem; font-weight: 600;
+    color: var(--text-main); margin-bottom: 8px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .form-group input, .form-group select {
+    width: 100%; padding: 12px 16px;
+    border: 1px solid rgba(0,0,0,0.12); border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+    color: var(--text-main); background: var(--white);
+    transition: border-color 0.3s; outline: none;
+  }
+  .form-group input:focus, .form-group select:focus {
+    border-color: var(--mid-green); box-shadow: 0 0 0 3px rgba(45,122,82,0.08);
+  }
+  .calc-btn {
+    width: 100%; padding: 14px; border-radius: 6px;
+    background: var(--dark-green); color: var(--white);
+    font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+    font-weight: 600; border: none; cursor: pointer;
+    transition: all 0.3s; margin-top: 8px;
+  }
+  .calc-btn:hover { background: var(--mid-green); transform: translateY(-2px); }
+
+  .calc-result {
+    background: linear-gradient(135deg, var(--dark-green), var(--graphite));
+    border-radius: 10px; padding: 32px;
+    color: var(--white);
+  }
+  .result-title {
+    font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--gold-light); margin-bottom: 24px;
+  }
+  .result-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .result-row:last-child { border-bottom: none; }
+  .result-label { font-size: 0.875rem; color: rgba(255,255,255,0.6); }
+  .result-value { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--white); }
+  .result-value.highlight { color: var(--gold); }
+  .result-value.total { font-size: 1.8rem; }
+  .result-note { font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 20px; line-height: 1.5; }
+
+  /* ── SERVICES ── */
+  .services {
+    padding: 100px 40px;
+    background: var(--white);
+  }
+  .services-header {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 40px; align-items: end; margin-bottom: 64px;
+  }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .service-card {
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px; padding: 36px 32px;
+    transition: all 0.4s; position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, var(--dark-green), var(--gold));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(0,0,0,0.08); border-color: rgba(200,169,81,0.2); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon {
+    width: 52px; height: 52px; border-radius: 10px;
+    background: linear-gradient(135deg, rgba(13,51,32,0.08), rgba(45,122,82,0.06));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; margin-bottom: 20px;
+    border: 1px solid rgba(13,51,32,0.1);
+  }
+  .service-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; font-weight: 600;
+    color: var(--dark-green); margin-bottom: 12px;
+  }
+  .service-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 16px; }
+  .service-list {
+    list-style: none; padding: 0;
+  }
+  .service-list li {
+    font-size: 0.85rem; color: var(--text-muted);
+    padding: 4px 0; padding-left: 16px; position: relative;
+  }
+  .service-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--gold); font-size: 0.75rem;
+  }
+
+  /* ── ABOUT / TRUST ── */
+  .about {
+    background: var(--dark-green);
+    padding: 100px 40px;
+  }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+  .about-left .section-label { color: var(--gold-light); }
+  .about-left .section-title { color: var(--white); }
+  .about-text { color: rgba(249,247,242,0.7); font-size: 1rem; line-height: 1.8; margin-bottom: 24px; }
+  .about-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem; color: var(--gold); font-style: italic; margin-bottom: 6px;
+  }
+  .about-title { color: rgba(249,247,242,0.5); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .trust-cards { display: grid; gap: 16px; }
+  .trust-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(200,169,81,0.15);
+    border-radius: 10px; padding: 24px; display: flex; gap: 16px; align-items: flex-start;
+    transition: all 0.3s;
+  }
+  .trust-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(200,169,81,0.3); }
+  .trust-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .trust-card h4 { color: var(--white); font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
+  .trust-card p { color: rgba(249,247,242,0.5); font-size: 0.85rem; line-height: 1.6; }
+
+  /* ── CONTACT ── */
+  .contact {
+    padding: 100px 40px;
+    background: var(--off-white);
+  }
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start;
+  }
+  .contact-info-cards { display: grid; gap: 16px; margin-top: 32px; }
+  .contact-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 10px; padding: 20px 24px;
+    display: flex; gap: 16px; align-items: center;
+    text-decoration: none; transition: all 0.3s;
+  }
+  .contact-card:hover { transform: translateX(6px); border-color: var(--gold); box-shadow: 0 4px 20px rgba(200,169,81,0.12); }
+  .contact-card-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--dark-green), var(--mid-green));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; flex-shrink: 0;
+  }
+  .contact-card-text h4 { font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+  .contact-card-text p { font-size: 0.95rem; font-weight: 600; color: var(--text-main); }
+
+  /* Lead Form */
+  .lead-form {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 16px; padding: 48px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+  }
+  .lead-form h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem; color: var(--dark-green); margin-bottom: 8px;
+  }
+  .lead-form p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 28px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .lead-form .form-group input,
+  .lead-form .form-group select,
+  .lead-form .form-group textarea {
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .lead-form .form-group textarea {
+    width: 100%; padding: 12px 16px; min-height: 100px;
+    border: 1px solid rgba(0,0,0,0.12); border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+    resize: vertical; outline: none; transition: border-color 0.3s;
+  }
+  .lead-form .form-group textarea:focus {
+    border-color: var(--mid-green); box-shadow: 0 0 0 3px rgba(45,122,82,0.08);
+  }
+  .submit-btn {
+    width: 100%; padding: 16px; border-radius: 8px;
+    background: linear-gradient(135deg, var(--dark-green), var(--mid-green));
+    color: var(--white); font-family: 'DM Sans', sans-serif;
+    font-size: 1rem; font-weight: 600; border: none; cursor: pointer;
+    transition: all 0.3s; margin-top: 8px;
+    letter-spacing: 0.02em;
+  }
+  .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(13,51,32,0.3); }
+  .form-success {
+    display: none; text-align: center; padding: 24px;
+    color: var(--mid-green); font-weight: 500;
+  }
+
+  /* ── BLOG / CONTENT ── */
+  .blog {
+    padding: 100px 40px; background: var(--white);
+  }
+  .blog-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; }
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .blog-card {
+    border: 1px solid rgba(0,0,0,0.07); border-radius: 12px;
+    overflow: hidden; transition: all 0.3s;
+  }
+  .blog-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+  .blog-thumb {
+    height: 180px;
+    background: linear-gradient(135deg, var(--dark-green), var(--mid-green));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3rem; position: relative; overflow: hidden;
+  }
+  .blog-thumb::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.3));
+  }
+  .blog-thumb.video { background: linear-gradient(135deg, #1a0d33, #2d1a52); }
+  .play-btn {
+    position: absolute; z-index: 1; width: 52px; height: 52px;
+    background: rgba(200,169,81,0.9); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; cursor: pointer; transition: all 0.3s;
+  }
+  .play-btn:hover { transform: scale(1.1); background: var(--gold); }
+  .blog-body { padding: 24px; }
+  .blog-tag {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--gold); font-weight: 600; margin-bottom: 10px;
+  }
+  .blog-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--dark-green); margin-bottom: 8px; }
+  .blog-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+  /* Upload section */
+  .upload-area {
+    margin-top: 48px; border: 2px dashed rgba(200,169,81,0.3);
+    border-radius: 12px; padding: 48px; text-align: center;
+    background: rgba(200,169,81,0.03); cursor: pointer; transition: all 0.3s;
+  }
+  .upload-area:hover { border-color: var(--gold); background: rgba(200,169,81,0.06); }
+  .upload-icon { font-size: 3rem; margin-bottom: 16px; }
+  .upload-area h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--dark-green); margin-bottom: 8px; }
+  .upload-area p { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 20px; }
+  #fileInput { display: none; }
+  .upload-btn {
+    background: var(--dark-green); color: var(--white);
+    padding: 12px 28px; border-radius: 6px; border: none;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    font-weight: 500; cursor: pointer; transition: all 0.3s;
+  }
+  .upload-btn:hover { background: var(--mid-green); }
+  .upload-list { margin-top: 20px; text-align: left; }
+  .upload-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 16px; background: var(--white);
+    border: 1px solid var(--border); border-radius: 8px;
+    margin-top: 8px; font-size: 0.875rem;
+  }
+  .upload-item-name { color: var(--text-main); font-weight: 500; }
+  .upload-item-size { color: var(--text-muted); }
+
+  /* ── TIP / DONATE ── */
+  .tip-banner {
+    background: linear-gradient(135deg, #1a0d2e 0%, #0d3320 100%);
+    padding: 60px 40px; text-align: center;
+  }
+  .tip-banner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; color: var(--white); margin-bottom: 12px;
+  }
+  .tip-banner p { color: rgba(249,247,242,0.6); margin-bottom: 28px; font-size: 1rem; }
+  .tip-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: var(--graphite);
+    padding: 16px 36px; border-radius: 8px;
+    font-weight: 700; font-size: 1rem; text-decoration: none;
+    transition: all 0.3s; border: none; cursor: pointer;
+  }
+  .tip-btn:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(200,169,81,0.35); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--graphite); padding: 48px 40px 28px;
+  }
+  .footer-top {
+    display: grid; grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px; margin-bottom: 40px;
+    padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 600; color: var(--white); margin-bottom: 12px;
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer-desc { color: rgba(255,255,255,0.4); font-size: 0.875rem; line-height: 1.7; }
+  .footer-col h5 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--gold-light); margin-bottom: 16px; font-weight: 600;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a {
+    color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.875rem;
+    transition: color 0.3s;
+  }
+  .footer-col ul li a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-copy { color: rgba(255,255,255,0.25); font-size: 0.8rem; }
+  .footer-legal { color: rgba(255,255,255,0.25); font-size: 0.8rem; }
+
+  /* ── MODALS ── */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.7); z-index: 1000;
+    align-items: center; justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--white); border-radius: 16px;
+    padding: 48px; max-width: 560px; width: 90%;
+    max-height: 90vh; overflow-y: auto;
+    position: relative; animation: modalIn 0.3s ease;
+  }
+  @keyframes modalIn { from { opacity: 0; transform: scale(0.95) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+  .modal-close {
+    position: absolute; top: 20px; right: 20px;
+    background: none; border: none; font-size: 1.5rem; cursor: pointer;
+    color: var(--text-muted); transition: color 0.3s;
+  }
+  .modal-close:hover { color: var(--text-main); }
+  .modal h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; color: var(--dark-green); margin-bottom: 8px;
+  }
+  .modal p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero-stats { display: none; }
+    .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .services-header { grid-template-columns: 1fr; }
+    .calc-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; flex-direction: column; position: fixed; top: 70px; left: 0; right: 0; background: var(--white); padding: 20px; border-bottom: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,0.1); z-index: 99; }
+    .nav-links.open { display: flex; }
+    .hamburger { display: flex; }
+    .hero { padding: 60px 20px; }
+    .services { padding: 60px 20px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .about { padding: 60px 20px; }
+    .contact { padding: 60px 20px; }
+    .blog { padding: 60px 20px; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .lead-form { padding: 28px; }
+    .footer-top { grid-template-columns: 1fr; gap: 28px; }
+    .lang-bar { padding: 8px 20px; }
+    .calculators { padding: 60px 20px; }
+    .calc-box { padding: 24px; }
+    .blog-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  }
+
+  /* ── PAYROLL INFO BANNER ── */
+  .payroll-info-banner {
+    display: flex; gap: 20px; align-items: flex-start;
+    margin-top: 24px;
+    padding: 24px 28px;
+    background: linear-gradient(135deg, rgba(13,51,32,0.04) 0%, rgba(200,169,81,0.04) 100%);
+    border: 1px solid rgba(200,169,81,0.2);
+    border-left: 4px solid var(--gold);
+    border-radius: 12px;
+  }
+  .pib-icon { font-size: 2.2rem; flex-shrink: 0; margin-top: 2px; }
+  .pib-content { flex: 1; }
+  .pib-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem; font-weight: 600;
+    color: var(--dark-green); margin-bottom: 16px;
+  }
+  .pib-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .pib-item {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px; padding: 12px 14px;
+    border: 1px solid rgba(200,169,81,0.12);
+  }
+  .pib-item-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+  .pib-item strong { display: block; font-size: 0.82rem; color: var(--dark-green); margin-bottom: 4px; }
+  .pib-item p { font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+  .pib-item p strong { display: inline; color: var(--dark-green); }
+  @media (max-width: 640px) {
+    .pib-grid { grid-template-columns: 1fr; }
+    .payroll-info-banner { flex-direction: column; }
+  }
+
+  /* ── BREAKDOWN TABLE ── */
+  .breakdown-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 2px solid var(--border);
+  }
+  .breakdown-col {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .breakdown-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 16px;
+    font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .employee-header { background: var(--dark-green); color: var(--white); }
+  .employer-header { background: var(--graphite); color: var(--white); }
+  .breakdown-flag { font-size: 1.2rem; }
+  .breakdown-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 9px 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    gap: 8px;
+  }
+  .breakdown-row:last-child { border-bottom: none; }
+  .breakdown-row-pension { background: rgba(200,169,81,0.05); }
+  .breakdown-label {
+    font-size: 0.82rem; color: var(--text-muted);
+    flex: 1; line-height: 1.3;
+  }
+  .breakdown-amounts {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 1px;
+    min-width: 90px;
+  }
+  .breakdown-annual { font-size: 0.9rem; font-weight: 600; color: var(--text-main); }
+  .breakdown-monthly, .breakdown-weekly {
+    font-size: 0.72rem; color: var(--text-muted);
+  }
+  .breakdown-total {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 11px 16px;
+    background: rgba(13,51,32,0.04);
+    border-top: 1px solid var(--border);
+    font-size: 0.82rem; font-weight: 600; color: var(--text-main);
+    gap: 8px;
+  }
+  .breakdown-net {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, rgba(13,51,32,0.07), rgba(45,122,82,0.04));
+    font-size: 0.82rem; font-weight: 700; color: var(--dark-green);
+    gap: 8px;
+  }
+  .total-val { font-size: 1rem; font-weight: 700; }
+  .green-val { color: var(--dark-green) !important; }
+  @media (max-width: 640px) {
+    .breakdown-table { grid-template-columns: 1fr; }
+  }
+
+  /* SERVICE CATEGORY LABELS */
+  .services-category-label {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 28px; padding: 14px 22px;
+    background: linear-gradient(135deg, var(--dark-green), var(--mid-green));
+    border-radius: 10px; color: var(--white);
+    font-weight: 600; font-size: 1rem; letter-spacing: 0.02em;
+  }
+  .cat-icon { font-size: 1.4rem; }
+  .service-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 600;
+    color: rgba(200,169,81,0.25); line-height: 1; margin-bottom: 6px;
+  }
+  .service-pension { border-left: 3px solid rgba(200,169,81,0.3); }
+  .service-pension:hover { border-left-color: var(--gold); }
+  .service-badge {
+    display: inline-block; margin-top: 14px;
+    background: rgba(200,169,81,0.1); border: 1px solid rgba(200,169,81,0.25);
+    color: var(--dark-green); font-size: 0.78rem; font-weight: 600;
+    padding: 5px 12px; border-radius: 20px;
+  }
+  .blog-read-more {
+    margin-top: 12px; font-size: 0.82rem;
+    color: var(--gold); font-weight: 600; cursor: pointer; transition: color 0.3s;
+  }
+  .blog-read-more:hover { color: var(--dark-green); }
+  .blog-card { cursor: pointer; }
+  .article-body { font-size: 0.9rem; line-height: 1.7; }
+  .art-highlight {
+    background: rgba(13,51,32,0.06); border-left: 3px solid var(--mid-green);
+    padding: 14px 18px; border-radius: 0 8px 8px 0; margin-bottom: 20px;
+  }
+  .art-h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--dark-green); margin: 16px 0 10px; font-weight: 600; }
+  .art-step { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 10px; }
+  .art-step-num {
+    width: 26px; height: 26px; border-radius: 50%; background: var(--dark-green);
+    color: var(--white); font-size: 0.75rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .art-warn {
+    background: rgba(200,169,81,0.08); border: 1px solid rgba(200,169,81,0.25);
+    border-radius: 8px; padding: 12px 16px; font-size: 0.85rem; margin-top: 16px;
+  }
+  .art-info-row {
+    display: flex; justify-content: space-between; padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 0.875rem;
+  }
+  .art-info-row span { color: var(--text-muted); }
+  .art-table { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-top: 8px; }
+  .art-table-row { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.05); font-size: 0.85rem; }
+  .art-table-head { background: var(--dark-green); color: var(--white); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .art-table-last { background: rgba(200,169,81,0.06); border-bottom: none; }
+
+  /* Success toast */
+  .toast {
+    position: fixed; bottom: 32px; right: 32px; z-index: 9999;
+    background: var(--dark-green); color: var(--white);
+    padding: 16px 24px; border-radius: 10px;
+    font-size: 0.9rem; font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    transform: translateY(100px); opacity: 0;
+    transition: all 0.4s; border-left: 4px solid var(--gold);
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+
+  /* Scroll indicator */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0; z-index: 999;
+    height: 3px; background: var(--gold);
+    width: 0%; transition: width 0.1s;
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('uk')">🇺🇦 Українська</button>
+  <button class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Інна<span>.</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services" data-uk="Послуги" data-ru="Услуги">Послуги</a></li>
+    <li><a href="#calculators" data-uk="Калькулятори" data-ru="Калькуляторы">Калькулятори</a></li>
+    <li><a href="#about" data-uk="Про мене" data-ru="Обо мне">Про мене</a></li>
+    <li><a href="#blog" data-uk="Статті та відео" data-ru="Статьи и видео">Статті та відео</a></li>
+    <li><a href="#contact" class="nav-cta" data-uk="Зв'язатись" data-ru="Связаться">Зв'язатись</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label" data-uk="Мої послуги" data-ru="Мои услуги">Мої послуги</div>
+        <h2 class="section-title" data-uk="Бухгалтерські послуги" data-ru="Бухгалтерские услуги">Бухгалтерські послуги</h2>
+      </div>
+    </div>
+    <!-- SECTION DIVIDER: PENSION -->
+    <div class="services-category-label">
+      <span class="cat-icon">🇺🇦</span>
+      <span data-uk="Пенсійне забезпечення & ПФУ" data-ru="Пенсионное обеспечение & ПФУ">Пенсійне забезпечення & ПФУ</span>
+    </div>
+    <div class="services-grid" style="margin-bottom: 48px;">
+
+      <!-- 01 -->
+      <div class="service-card service-pension">
+        <div class="service-num">01</div>
+        <div class="service-icon">🏦</div>
+        <h3 data-uk="Добровільні внески до ПФУ" data-ru="Добровольные взносы в ПФУ">Добровільні внески до ПФУ</h3>
+        <p data-uk="Оформлення добровільної участі в системі пенсійного страхування для тих, хто проживає за кордоном." data-ru="Оформление добровольного участия в системе пенсионного страхования для проживающих за рубежом.">Оформлення добровільної участі в системі пенсійного страхування для тих, хто проживає за кордоном.</p>
+        <ul class="service-list">
+          <li data-uk="Безробітні та фрілансери" data-ru="Безработные и фрилансеры">Безробітні та фрілансери</li>
+          <li data-uk="Українці за кордоном" data-ru="Украинцы за рубежом">Українці за кордоном</li>
+          <li data-uk="Без роботодавця в Україні" data-ru="Без работодателя в Украине">Без роботодавця в Україні</li>
+          <li data-uk="Онлайн через Дію або ПФУ" data-ru="Онлайн через Дию или ПФУ">Онлайн через Дію або ПФУ</li>
+        </ul>
+        <div class="service-badge" data-uk="⚡ 1 оплачений місяць = 1 місяць стажу" data-ru="⚡ 1 оплаченный месяц = 1 месяц стажа">⚡ 1 оплачений місяць = 1 місяць стажу</div>
+      </div>
+
+      <!-- 02 -->
+      <div class="service-card service-pension">
+        <div class="service-num">02</div>
+        <div class="service-icon">📖</div>
+        <h3 data-uk="Оцифрування трудової книжки" data-ru="Оцифровка трудовой книжки">Оцифрування трудової книжки</h3>
+        <p data-uk="Переведення трудової книжки в електронний формат. Оформлення документів для підтвердження стажу." data-ru="Перевод трудовой книжки в электронный формат. Оформление документов для подтверждения стажа.">Переведення трудової книжки в електронний формат. Оформлення документів для підтвердження стажу.</p>
+        <ul class="service-list">
+          <li data-uk="Переведення в Дію / Реєстр" data-ru="Перевод в Дию / Реестр">Переведення в Дію / Реєстр</li>
+          <li data-uk="Підтвердження записів" data-ru="Подтверждение записей">Підтвердження записів</li>
+          <li data-uk="Архівні довідки" data-ru="Архивные справки">Архівні довідки</li>
+        </ul>
+        <div class="service-badge" data-uk="⚡ Швидке виконання" data-ru="⚡ Быстрое выполнение">⚡ Швидке виконання</div>
+      </div>
+
+      <!-- 03 -->
+      <div class="service-card service-pension">
+        <div class="service-num">03</div>
+        <div class="service-icon">💻</div>
+        <h3 data-uk="Реєстрація на порталі ПФУ" data-ru="Регистрация на портале ПФУ">Реєстрація на порталі ПФУ</h3>
+        <p data-uk="Покрокова допомога в реєстрації в електронному кабінеті Пенсійного фонду України та Дія." data-ru="Пошаговая помощь при регистрации в электронном кабинете Пенсионного фонда Украины и Дия.">Покрокова допомога в реєстрації в електронному кабінеті ПФУ та Дія.</p>
+        <ul class="service-list">
+          <li data-uk="Особистий кабінет ПФУ" data-ru="Личный кабинет ПФУ">Особистий кабінет ПФУ</li>
+          <li data-uk="Доступ через Дію" data-ru="Доступ через Дию">Доступ через Дію</li>
+          <li data-uk="Навігація порталом" data-ru="Навигация порталом">Навігація порталом</li>
+          <li data-uk="Укладення договору онлайн" data-ru="Заключение договора онлайн">Укладення договору онлайн</li>
+        </ul>
+      </div>
+
+      <!-- 04 -->
+      <div class="service-card service-pension">
+        <div class="service-num">04</div>
+        <div class="service-icon">🌍</div>
+        <h3 data-uk="Облік зарубіжного стажу" data-ru="Учёт зарубежного стажа">Облік зарубіжного стажу</h3>
+        <p data-uk="Консультації з визнання трудового стажу з-за кордону при призначенні пенсії в Україні." data-ru="Консультации по признанию трудового стажа из-за рубежа при назначении пенсии в Украине.">Консультації з визнання трудового стажу з-за кордону при призначенні пенсії в Україні.</p>
+        <ul class="service-list">
+          <li data-uk="Аналіз міжнародних угод" data-ru="Анализ международных соглашений">Аналіз міжнародних угод</li>
+          <li data-uk="Збір документів (апостиль/легалізація)" data-ru="Сбор документов (апостиль/легализация)">Збір документів (апостиль/легалізація)</li>
+          <li data-uk="Подача заяв до ПФУ" data-ru="Подача заявлений в ПФУ">Подача заяв до ПФУ</li>
+          <li data-uk="🇮🇪 Ірландський стаж для пенсії" data-ru="🇮🇪 Ирландский стаж для пенсии">🇮🇪 Ірландський стаж для пенсії</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION DIVIDER: IRELAND -->
+    <div class="services-category-label">
+      <span class="cat-icon">🇮🇪</span>
+      <span data-uk="Ірландські Payroll & Tax Services" data-ru="Ирландские Payroll & Tax Services">Ірландські Payroll & Tax Services</span>
+    </div>
+    <div class="services-grid">
+
+      <!-- 05 -->
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon">💰</div>
+        <h3 data-uk="Payroll Services (PAYE)" data-ru="Payroll Services (PAYE)">Payroll Services (PAYE)</h3>
+        <p data-uk="Розрахунок заробітної плати, PRSI, USC, PAYE та підготовка звітності через Revenue Online System (ROS)." data-ru="Расчёт заработной платы, PRSI, USC, PAYE и подготовка отчётности через Revenue Online System (ROS).">Розрахунок заробітної плати, PRSI, USC, PAYE та підготовка звітності через ROS.</p>
+        <ul class="service-list">
+          <li data-uk="Gross → Net розрахунок" data-ru="Gross → Net расчёт">Gross → Net розрахунок</li>
+          <li data-uk="PRSI & USC нарахування" data-ru="PRSI & USC начисление">PRSI & USC нарахування</li>
+          <li data-uk="Розрахункові листи (payslips)" data-ru="Расчётные листки (payslips)">Розрахункові листи (payslips)</li>
+          <li data-uk="Revenue Payroll Notifications (RPN)" data-ru="Revenue Payroll Notifications (RPN)">Revenue Payroll Notifications (RPN)</li>
+          <li data-uk="Benefit-in-Kind (BIK)" data-ru="Benefit-in-Kind (BIK)">Benefit-in-Kind (BIK)</li>
+          <li data-uk="Auto Enrolment 2026" data-ru="Auto Enrolment 2026">Auto Enrolment 2026</li>
+        </ul>
+        <div class="service-badge" data-uk="📊 Актуально на 2026 рік" data-ru="📊 Актуально на 2026 год">📊 Актуально на 2026 рік</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-icon">🛡️</div>
+        <h3 data-uk="PRSI & USC" data-ru="PRSI & USC">PRSI & USC</h3>
+        <p data-uk="Правильне нарахування PRSI та USC, повернення переплат, консультації щодо класів." data-ru="Правильное начисление PRSI и USC, возврат переплат, консультации по классам.">Правильне нарахування PRSI та USC, повернення переплат.</p>
+        <ul class="service-list">
+          <li data-uk="Клас A, B, D, S та інші" data-ru="Класс A, B, D, S и другие">Клас A, B, D, S та інші</li>
+          <li data-uk="Повернення переплат PRSI" data-ru="Возврат переплат PRSI">Повернення переплат PRSI</li>
+          <li data-uk="NTFL (1% від роботодавця)" data-ru="NTFL (1% от работодателя)">NTFL (1% від роботодавця)</li>
+          <li data-uk="USC розрахунок та пільги" data-ru="USC расчёт и льготы">USC розрахунок та пільги</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">07</div>
+        <div class="service-icon">🎓</div>
+        <h3 data-uk="Консультації" data-ru="Консультации">Консультації</h3>
+        <p data-uk="Пояснюю складне просто. Допомагаю розібратися в ірландській та українській системах оподаткування." data-ru="Объясняю сложное просто. Помогаю разобраться в ирландской и украинской системах налогообложения.">Пояснюю складне просто — ірландська та українська системи.</p>
+        <ul class="service-list">
+          <li data-uk="Індивідуальні консультації" data-ru="Индивидуальные консультации">Індивідуальні консультації</li>
+          <li data-uk="Пояснення ROS / myAccount" data-ru="Объяснение ROS / myAccount">Пояснення ROS / myAccount</li>
+          <li data-uk="Онлайн та офлайн формат" data-ru="Онлайн и офлайн формат">Онлайн та офлайн формат</li>
+          <li data-uk="Telegram / WhatsApp підтримка" data-ru="Telegram / WhatsApp поддержка">Telegram / WhatsApp підтримка</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATORS -->
+<section class="calculators" id="calculators">
+  <div class="container">
+    <div class="calc-header">
+      <div class="section-label" data-uk="Онлайн-калькулятори 2026" data-ru="Онлайн-калькуляторы 2026">Онлайн-калькулятори 2026</div>
+      <h2 class="section-title" data-uk="Розрахуйте Payroll та Податки" data-ru="Рассчитайте Payroll и Налоги">Розрахуйте Payroll та Податки</h2>
+      <p class="section-sub" data-uk="Актуальні ставки 2026: NMW €14.15/год, USC від 0%, PRSI клас A — 4.2% (до 30.09.2026), 4.35% (з 01.10.2026)" data-ru="Актуальные ставки 2026: NMW €14.15/ч, USC от 0%, PRSI класс A — 4.2% (до 30.09.2026), 4.35% (с 01.10.2026)">Актуальні ставки 2026: NMW €14.15/год, USC від 0%, PRSI клас A — 4.2% (до 30.09.2026), 4.35% (з 01.10.2026)</p>
+    </div>
+
+    <div class="calc-tabs">
+      <button class="calc-tab active" onclick="switchTab('payroll')" data-uk="💰 Payroll (PAYE)" data-ru="💰 Payroll (PAYE)">💰 Payroll (PAYE)</button>
+      <button class="calc-tab" onclick="switchTab('taxcredits')" data-uk="🏷️ Tax Credits" data-ru="🏷️ Tax Credits">🏷️ Tax Credits</button>
+      <button class="calc-tab" onclick="switchTab('prsi')" data-uk="🛡️ PRSI" data-ru="🛡️ PRSI">🛡️ PRSI</button>
+      <button class="calc-tab" onclick="switchTab('usc')" data-uk="📊 USC" data-ru="📊 USC">📊 USC</button>
+    </div>
+
+    <!-- PAYROLL PANEL -->
+    <div class="calc-panel active" id="panel-payroll">
+      <div class="calc-box">
+        <div class="calc-grid">
+          <div>
+            <div class="form-group">
+              <label data-uk="Тип оплати" data-ru="Тип оплаты">Тип оплати</label>
+              <select id="pay-type" onchange="updatePayroll()">
+                <option value="annual" data-uk="Річна зарплата (за рік)" data-ru="Годовая зарплата (за год)">Річна зарплата (за рік)</option>
+                <option value="weekly" data-uk="Тижнева зарплата (за тиждень)" data-ru="Еженедельная зарплата (за неделю)">Тижнева зарплата (за тиждень)</option>
+                <option value="hourly" data-uk="Погодинна оплата" data-ru="Почасовая оплата">Погодинна оплата</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label id="pay-amount-label" data-uk="Сума (€)" data-ru="Сумма (€)">Сума (€)</label>
+              <input type="number" id="pay-amount" placeholder="35000" onchange="updatePayroll()" oninput="updatePayroll()">
+            </div>
+            <div class="form-group" id="hours-group" style="display:none">
+              <label data-uk="Годин на тиждень" data-ru="Часов в неделю">Годин на тиждень</label>
+              <input type="number" id="hours-week" placeholder="39" value="39" onchange="updatePayroll()">
+            </div>
+            <div class="form-group">
+              <label data-uk="Статус" data-ru="Статус">Статус</label>
+              <select id="tax-status" onchange="updatePayroll()">
+                <option value="single" data-uk="Одинокий/а" data-ru="Холост/а">Одинокий/а</option>
+                <option value="married" data-uk="Одружений/а (1 дохід)" data-ru="Женат/замужем (1 доход)">Одружений/а (1 дохід)</option>
+                <option value="married2" data-uk="Одружений/а (2 доходи)" data-ru="Женат/замужем (2 дохода)">Одружений/а (2 доходи)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-uk="Пенсія (% від брутто)" data-ru="Пенсия (% от брутто)">Пенсія (% від брутто)</label>
+              <input type="number" id="pension-pct" placeholder="0" value="0" min="0" max="40" onchange="updatePayroll()">
+            </div>
+            <button class="calc-btn" onclick="updatePayroll()" data-uk="Розрахувати" data-ru="Рассчитать">Розрахувати</button>
+          </div>
+          <div class="calc-result">
+            <div class="result-title" data-uk="РЕЗУЛЬТАТ РОЗРАХУНКУ" data-ru="РЕЗУЛЬТАТ РАСЧЁТА">РЕЗУЛЬТАТ РОЗРАХУНКУ</div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Валова зарплата (за рік)" data-ru="Брутто (за год)">Валова зарплата (за рік)</span>
+              <span class="result-value" id="res-gross">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Пенсійні відрахування" data-ru="Пенсионные отчисления">Пенсійні відрахування</span>
+              <span class="result-value" id="res-pension">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Підоходний податок (IT)" data-ru="Подоходный налог (IT)">Підоходний податок (IT)</span>
+              <span class="result-value" id="res-it">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="USC" data-ru="USC">USC</span>
+              <span class="result-value" id="res-usc">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="PRSI (клас A, 4.2% до 30.09.2026)" data-ru="PRSI (класс A, 4.2% до 30.09.2026)">PRSI (клас A, 4.2% до 30.09.2026)</span>
+              <span class="result-value" id="res-prsi">€0</span>
+            </div>
+            <div class="result-row" style="border-top: 1px solid rgba(200,169,81,0.3); margin-top:8px; padding-top:16px;">
+              <span class="result-label" style="color:var(--gold-light); font-weight:600" data-uk="НЕТТО (на руки / за рік)" data-ru="НЕТТО (на руки / за год)">НЕТТО (на руки / за рік)</span>
+              <span class="result-value total highlight" id="res-net">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Нетто за місяць" data-ru="Нетто за месяц">Нетто за місяць</span>
+              <span class="result-value" id="res-net-month">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Нетто за тиждень" data-ru="Нетто за неделю">Нетто за тиждень</span>
+              <span class="result-value" id="res-net-week">€0</span>
+            </div>
+            <p class="result-note" data-uk="⚠️ Увага: розрахунок є ОРІЄНТОВНИМ на основі стандартних кредитів 2026. Реальна сума може відрізнятися залежно від ваших особистих обставин, кредитів та пільг. Всі деталі необхідно уточнювати індивідуально — зверніться до Інни за точним розрахунком." data-ru="⚠️ Внимание: расчёт является ОРИЕНТИРОВОЧНЫМ на основе стандартных кредитов 2026. Реальная сумма может отличаться в зависимости от ваших личных обстоятельств, кредитов и льгот. Все детали необходимо уточнять индивидуально — обратитесь к Инне за точным расчётом.">⚠️ Увага: розрахунок є ОРІЄНТОВНИМ на основі стандартних кредитів 2026. Реальна сума може відрізнятися залежно від ваших особистих обставин, кредитів та пільг. Всі деталі необхідно уточнювати індивідуально — зверніться до Інни за точним розрахунком.</p>
+          </div>
+        </div>
+
+        <!-- BREAKDOWN TABLE -->
+        <div class="breakdown-table" id="breakdown-table" style="display:none;">
+          <!-- EMPLOYEE SIDE -->
+          <div class="breakdown-col">
+            <div class="breakdown-header employee-header">
+              <span class="breakdown-flag">👤</span>
+              <span data-uk="ПРАЦІВНИК сплачує" data-ru="РАБОТНИК платит">ПРАЦІВНИК сплачує</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label" data-uk="Income Tax (PAYE)" data-ru="Income Tax (PAYE)">Income Tax (PAYE)</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" id="bd-emp-it-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-emp-it-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-emp-it-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label">USC</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" id="bd-emp-usc-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-emp-usc-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-emp-usc-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label" data-uk="PRSI (клас A, 4.2%)" data-ru="PRSI (класс A, 4.2%)">PRSI (клас A, 4.2%)</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" id="bd-emp-prsi-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-emp-prsi-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-emp-prsi-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-row breakdown-row-pension" id="bd-pension-row" style="display:none;">
+              <span class="breakdown-label" data-uk="Пенсійний внесок" data-ru="Пенсионный взнос">Пенсійний внесок</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" id="bd-emp-pen-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-emp-pen-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-emp-pen-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-total">
+              <span data-uk="РАЗОМ утримань" data-ru="ИТОГО удержаний">РАЗОМ утримань</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual total-val" id="bd-emp-total-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-emp-total-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-emp-total-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-net">
+              <span data-uk="На руки (Нетто)" data-ru="На руки (Нетто)">На руки (Нетто)</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual total-val green-val" id="bd-emp-net-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-emp-net-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-emp-net-wk">€0 /тижд</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMPLOYER SIDE -->
+          <div class="breakdown-col">
+            <div class="breakdown-header employer-header">
+              <span class="breakdown-flag">🏢</span>
+              <span data-uk="РОБОТОДАВЕЦЬ сплачує" data-ru="РАБОТОДАТЕЛЬ платит">РОБОТОДАВЕЦЬ сплачує</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label" data-uk="Брутто зарплата" data-ru="Брутто зарплата">Брутто зарплата</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" id="bd-empr-gross-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-empr-gross-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-empr-gross-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label" data-uk="PRSI роботодавця (A1: 11.25%, A0-AL: 9.0%)" data-ru="PRSI работодателя (A1: 11.25%, A0-AL: 9.0%)">PRSI роботодавця</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" id="bd-empr-prsi-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-empr-prsi-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-empr-prsi-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label" data-uk="incl. NTFL 1% (вкл. у PRSI)" data-ru="incl. NTFL 1% (вкл. в PRSI)">incl. NTFL 1%</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual" style="color:var(--text-muted); font-size:0.82rem" id="bd-empr-ntfl-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-empr-ntfl-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-empr-ntfl-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-total">
+              <span data-uk="РАЗОМ витрати на 1 працівника" data-ru="ИТОГО расходы на 1 работника">РАЗОМ витрати</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual total-val" id="bd-empr-total-yr">€0</span>
+                <span class="breakdown-monthly" id="bd-empr-total-mo">€0 /міс</span>
+                <span class="breakdown-weekly" id="bd-empr-total-wk">€0 /тижд</span>
+              </div>
+            </div>
+            <div class="breakdown-net">
+              <span data-uk="Податкове навантаження (%" data-ru="Налоговая нагрузка (%)">Податкове навантаження</span>
+              <div class="breakdown-amounts">
+                <span class="breakdown-annual total-val" id="bd-tax-burden" style="color:var(--gold)">0%</span>
+                <span class="breakdown-monthly" style="font-size:0.75rem; color:var(--text-muted);" data-uk="від брутто" data-ru="от брутто">від брутто</span>
+                <span class="breakdown-weekly"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IRELAND PAYROLL INFO BANNER -->
+        <div class="payroll-info-banner" id="payroll-info-banner" style="display:none;">
+          <div class="pib-icon">🇮🇪</div>
+          <div class="pib-content">
+            <h4 class="pib-title" data-uk="Як працює система зарплат в Ірландії" data-ru="Как работает система зарплат в Ирландии">Як працює система зарплат в Ірландії</h4>
+            <div class="pib-grid">
+              <div class="pib-item">
+                <div class="pib-item-icon">📅</div>
+                <div>
+                  <strong data-uk="Тижнева виплата (найпоширеніша)" data-ru="Еженедельная выплата (самая частая)">Тижнева виплата (найпоширеніша)</strong>
+                  <p data-uk="В Ірландії більшість роботодавців платять зарплату щотижня. Рік = 52 тижні. PRSI, USC та PAYE розраховуються саме на тижневій основі — це базова одиниця ірландської системи payroll." data-ru="В Ирландии большинство работодателей платят зарплату еженедельно. Год = 52 недели. PRSI, USC и PAYE рассчитываются именно на недельной основе — это базовая единица ирландской системы payroll.">В Ірландії більшість роботодавців платять зарплату щотижня. Рік = <strong>52 тижні</strong>. PRSI, USC та PAYE розраховуються саме на тижневій основі — це базова одиниця ірландської системи payroll.</p>
+                </div>
+              </div>
+              <div class="pib-item">
+                <div class="pib-item-icon">🗓️</div>
+                <div>
+                  <strong data-uk="Місячна виплата" data-ru="Ежемесячная выплата">Місячна виплата</strong>
+                  <p data-uk="Деякі компанії (особливо офісний сектор) платять щомісяця. Рік = 12 місяців. При місячній виплаті пороги PRSI та USC перераховуються на місячній основі (тижневий поріг × 52 ÷ 12)." data-ru="Некоторые компании (особенно офисный сектор) платят ежемесячно. Год = 12 месяцев. При месячной выплате пороги PRSI и USC пересчитываются на месячной основе (недельный порог × 52 ÷ 12).">Деякі компанії (особливо офісний сектор) платять щомісяця. Рік = <strong>12 місяців</strong>. Пороги PRSI та USC перераховуються на місячній основі.</p>
+                </div>
+              </div>
+              <div class="pib-item">
+                <div class="pib-item-icon">💡</div>
+                <div>
+                  <strong data-uk="Важливо знати" data-ru="Важно знать">Важливо знати</strong>
+                  <p data-uk="Тижнева зарплата ÷ 7 ≠ денна ставка для PRSI. Revenue вважає кожен тиждень окремим розрахунковим періодом. Наприклад, якщо вам виплатили відпускні за 2 тижні одразу — PRSI рахується окремо для кожного тижня." data-ru="Недельная зарплата ÷ 7 ≠ дневная ставка для PRSI. Revenue считает каждую неделю отдельным расчётным периодом. Например, если вам выплатили отпускные за 2 недели сразу — PRSI считается отдельно для каждой недели.">Тижнева зарплата ÷ 7 ≠ денна ставка для PRSI. Revenue вважає кожен тиждень окремим розрахунковим періодом.</p>
+                </div>
+              </div>
+              <div class="pib-item">
+                <div class="pib-item-icon">📊</div>
+                <div>
+                  <strong data-uk="Про цей калькулятор" data-ru="Об этом калькуляторе">Про цей калькулятор</strong>
+                  <p data-uk="Цей калькулятор працює з річними сумами: тижнева зарплата × 52 = річна. Нетто за тиждень і місяць — це розбивка річного результату. Для точного розрахунку з урахуванням усіх обставин — зверніться до Інни." data-ru="Этот калькулятор работает с годовыми суммами: недельная зарплата × 52 = годовая. Нетто за неделю и месяц — это разбивка годового результата. Для точного расчёта — обратитесь к Инне.">Калькулятор: тижнева зарплата × 52 = річна. Нетто за тиждень і місяць — розбивка річного результату.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAX CREDITS PANEL -->
+    <div class="calc-panel" id="panel-taxcredits">
+      <div class="calc-box">
+        <div class="calc-grid">
+          <div>
+            <div class="form-group">
+              <label data-uk="Сімейний стан" data-ru="Семейное положение">Сімейний стан</label>
+              <select id="tc-status">
+                <option value="single" data-uk="Одинокий/а" data-ru="Холост/а">Одинокий/а</option>
+                <option value="married" data-uk="Одружений/а" data-ru="Женат/Замужем">Одружений/а</option>
+                <option value="widow" data-uk="Вдовець/Вдова" data-ru="Вдовец/Вдова">Вдовець/Вдова</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-uk="Кількість роботодавців" data-ru="Кол-во работодателей">Кількість роботодавців</label>
+              <select id="tc-employers">
+                <option value="1">1</option>
+                <option value="2">2+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-uk="Дитина з інвалідністю" data-ru="Ребёнок с инвалидностью">Дитина з інвалідністю</label>
+              <select id="tc-disabled">
+                <option value="no" data-uk="Ні" data-ru="Нет">Ні</option>
+                <option value="yes" data-uk="Так" data-ru="Да">Так</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-uk="Одинокий батько/мати (SPCCC)" data-ru="Одинокий родитель (SPCCC)">Одинокий батько/мати (SPCCC)</label>
+              <select id="tc-spccc">
+                <option value="no" data-uk="Ні" data-ru="Нет">Ні</option>
+                <option value="yes" data-uk="Так" data-ru="Да">Так</option>
+              </select>
+            </div>
+            <button class="calc-btn" onclick="calcTaxCredits()" data-uk="Розрахувати кредити" data-ru="Рассчитать кредиты">Розрахувати кредити</button>
+          </div>
+          <div class="calc-result">
+            <div class="result-title" data-uk="ВАШІ ПОДАТКОВІ КРЕДИТИ 2026" data-ru="ВАШИ НАЛОГОВЫЕ КРЕДИТЫ 2026">ВАШІ ПОДАТКОВІ КРЕДИТИ 2026</div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Персональний кредит" data-ru="Личный кредит">Персональний кредит</span>
+              <span class="result-value" id="tc-personal">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Кредит працівника (PAYE)" data-ru="Кредит работника (PAYE)">Кредит працівника (PAYE)</span>
+              <span class="result-value" id="tc-employee">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="Додаткові кредити" data-ru="Доп. кредиты">Додаткові кредити</span>
+              <span class="result-value" id="tc-additional">€0</span>
+            </div>
+            <div class="result-row" style="border-top: 1px solid rgba(200,169,81,0.3); margin-top:8px; padding-top:16px;">
+              <span class="result-label" style="color:var(--gold-light); font-weight:600" data-uk="РАЗОМ (рік)" data-ru="ИТОГО (год)">РАЗОМ (рік)</span>
+              <span class="result-value total highlight" id="tc-total">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="На місяць" data-ru="В месяц">На місяць</span>
+              <span class="result-value" id="tc-monthly">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="На тиждень" data-ru="В неделю">На тиждень</span>
+              <span class="result-value" id="tc-weekly">€0</span>
+            </div>
+            <p class="result-note" data-uk="* Стандартні кредити 2026 (Personal €2,000, Employee €2,000). Кредит вдови — €2,250 (2–5 рік) + €1,900 (SPCCC). Інна розрахує ваш точний кредит." data-ru="* Стандартные кредиты 2026 (Personal €2,000, Employee €2,000). Кредит вдовы — €2,250 (2–5 год) + €1,900 (SPCCC). Инна рассчитает ваш точный кредит.">* Стандартні кредити 2026 (Personal €2,000, Employee €2,000). Інна розрахує ваш точний кредит.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRSI PANEL -->
+    <div class="calc-panel" id="panel-prsi">
+      <div class="calc-box">
+        <div class="calc-grid">
+          <div>
+            <div class="form-group">
+              <label data-uk="Тижнева зарплата брутто (€)" data-ru="Еженедельная зарплата брутто (€)">Тижнева зарплата брутто (€)</label>
+              <input type="number" id="prsi-weekly" placeholder="650" oninput="calcPRSI()">
+            </div>
+            <div class="form-group">
+              <label data-uk="Клас PRSI" data-ru="Класс PRSI">Клас PRSI</label>
+              <select id="prsi-class" onchange="calcPRSI()">
+                <option value="A" data-uk="Клас A — приватний/держ. сектор (з 6 квіт. 1995)" data-ru="Класс A — частный/гос. сектор (с 6 апр. 1995)">Клас A — приватний/держ. сектор (з 6 квіт. 1995)</option>
+                <option value="J" data-uk="Клас J — дохід менше €38/тижд" data-ru="Класс J — доход менее €38/нед">Клас J — дохід менше €38/тижд</option>
+                <option value="S" data-uk="Клас S — самозайнятий (мін. €650/рік)" data-ru="Класс S — самозанятый (мин. €650/год)">Клас S — самозайнятий (мін. €650/рік)</option>
+                <option value="B" data-uk="Клас B — держ. службовці до 6 квіт. 1995" data-ru="Класс B — госслужащие до 6 апр. 1995">Клас B — держ. службовці до 6 квіт. 1995</option>
+              </select>
+            </div>
+            <div style="background: rgba(200,169,81,0.08); border: 1px solid rgba(200,169,81,0.2); border-radius: 8px; padding: 16px; margin-bottom: 20px; font-size: 0.82rem; color: var(--text-muted); line-height: 1.8;">
+              <strong style="color: var(--dark-green)" data-uk="Офіційні ставки PRSI 2026 — Клас A:" data-ru="Официальные ставки PRSI 2026 — Класс A:">Офіційні ставки PRSI 2026 — Клас A:</strong><br>
+              <span data-uk="A0 (€38–€352): працівник 0%, роботодавець 9.0%" data-ru="A0 (€38–€352): работник 0%, работодатель 9.0%">A0 (€38–€352): працівник 0%, роботодавець 9.0%</span><br>
+              <span data-uk="AX (€352.01–€424): 4.2%* – кредит, роботодавець 9.0%" data-ru="AX (€352.01–€424): 4.2%* – кредит, работодатель 9.0%">AX (€352.01–€424): 4.2%* – кредит, роботодавець 9.0%</span><br>
+              <span data-uk="AL (€424.01–€552): працівник 4.2%*, роботодавець 9.0%" data-ru="AL (€424.01–€552): работник 4.2%*, работодатель 9.0%">AL (€424.01–€552): працівник 4.2%*, роботодавець 9.0%</span><br>
+              <span data-uk="A1 (>€552): працівник 4.2%*, роботодавець 11.25% + 1% NTFL" data-ru="A1 (>€552): работник 4.2%*, работодатель 11.25% + 1% NTFL">A1 (&gt;€552): працівник 4.2%*, роботодавець 11.25% + 1% NTFL</span><br>
+              <span style="color:var(--gold); font-size:0.75rem;" data-uk="* 4.35% з 1 жовтня 2026. PRSI Credit до €12/тижд для AX (€352.01–€424)" data-ru="* 4.35% с 1 октября 2026. PRSI Credit до €12/нед для AX (€352.01–€424)">* 4.35% з 1 жовтня 2026. PRSI Credit до €12/тижд для AX</span>
+            </div>
+            <button class="calc-btn" onclick="calcPRSI()" data-uk="Розрахувати PRSI" data-ru="Рассчитать PRSI">Розрахувати PRSI</button>
+          </div>
+          <div class="calc-result">
+            <div class="result-title" data-uk="ВНЕСКИ PRSI (ЗА ТИЖДЕНЬ)" data-ru="ВЗНОСЫ PRSI (ЗА НЕДЕЛЮ)">ВНЕСКИ PRSI (ЗА ТИЖДЕНЬ)</div>
+            <div class="result-row">
+              <span class="result-label" id="prsi-subclass-label" data-uk="Підклас PRSI" data-ru="Подкласс PRSI">Підклас PRSI</span>
+              <span class="result-value" id="prsi-subclass" style="font-size:1rem; color:var(--gold-light)">—</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="PRSI працівника (тижд.)" data-ru="PRSI работника (нед.)">PRSI працівника (тижд.)</span>
+              <span class="result-value" id="prsi-employee">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="PRSI Credit (якщо AX)" data-ru="PRSI Credit (если AX)">PRSI Credit (якщо AX)</span>
+              <span class="result-value" id="prsi-credit" style="color:#4caf80">–€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="PRSI працівника ПІСЛЯ кредиту" data-ru="PRSI работника ПОСЛЕ кредита">PRSI після кредиту</span>
+              <span class="result-value highlight" id="prsi-employee-net">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="PRSI роботодавця (тижд.)" data-ru="PRSI работодателя (нед.)">PRSI роботодавця (тижд.)</span>
+              <span class="result-value" id="prsi-employer">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="NTFL 1% (вкл. в ставку роботодавця)" data-ru="NTFL 1% (включён в ставку работодателя)">NTFL 1% (вкл. в ставку роботодавця)</span>
+              <span class="result-value" id="prsi-ntfl" style="color:var(--text-muted); font-size:0.9rem">—</span>
+            </div>
+            <div class="result-row" style="border-top: 1px solid rgba(200,169,81,0.3); margin-top:8px; padding-top:16px;">
+              <span class="result-label" style="color:var(--gold-light); font-weight:600" data-uk="РАЗОМ PRSI (за рік)" data-ru="ИТОГО PRSI (за год)">РАЗОМ PRSI (за рік)</span>
+              <span class="result-value total highlight" id="prsi-annual">€0</span>
+            </div>
+            <p class="result-note" id="prsi-note" data-uk="Джерело: SW14, Dept of Social Protection, January 2026. ⚠️ Розрахунок орієнтовний. Для точного результату зверніться до Інни." data-ru="Источник: SW14, Dept of Social Protection, January 2026. ⚠️ Расчёт ориентировочный. Для точного результата обратитесь к Инне.">Джерело: SW14, Dept of Social Protection, January 2026.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- USC PANEL -->
+    <div class="calc-panel" id="panel-usc">
+      <div class="calc-box">
+        <div class="calc-grid">
+          <div>
+            <div class="form-group">
+              <label data-uk="Річний дохід (€)" data-ru="Годовой доход (€)">Річний дохід (€)</label>
+              <input type="number" id="usc-income" placeholder="45000" oninput="calcUSC()">
+            </div>
+            <div class="form-group">
+              <label data-uk="Вік" data-ru="Возраст">Вік</label>
+              <select id="usc-age" onchange="calcUSC()">
+                <option value="under70" data-uk="До 70 років" data-ru="До 70 лет">До 70 років</option>
+                <option value="over70" data-uk="70 років і старше" data-ru="70 лет и старше">70 років і старше</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-uk="Повна медична картка?" data-ru="Полная медицинская карта?">Повна медична картка?</label>
+              <select id="usc-medcard" onchange="calcUSC()">
+                <option value="no" data-uk="Ні" data-ru="Нет">Ні</option>
+                <option value="yes" data-uk="Так (дохід ≤ €60,000)" data-ru="Да (доход ≤ €60,000)">Так (дохід ≤ €60,000)</option>
+              </select>
+            </div>
+            <div style="background: rgba(200,169,81,0.08); border: 1px solid rgba(200,169,81,0.2); border-radius: 8px; padding: 16px; margin-bottom: 20px; font-size: 0.82rem; color: var(--text-muted);">
+              <strong style="color: var(--dark-green)" data-uk="Ставки USC 2026:" data-ru="Ставки USC 2026:">Ставки USC 2026:</strong><br>
+              €0–€13,000: <strong>0%</strong><br>
+              €13,001–€28,700: <strong>2%</strong><br>
+              €28,701–€70,044: <strong>4%</strong><br>
+              >€70,044: <strong>8%</strong>
+            </div>
+            <button class="calc-btn" onclick="calcUSC()" data-uk="Розрахувати USC" data-ru="Рассчитать USC">Розрахувати USC</button>
+          </div>
+          <div class="calc-result">
+            <div class="result-title" data-uk="НАРАХОВАНИЙ USC" data-ru="НАЧИСЛЕННЫЙ USC">НАРАХОВАНИЙ USC</div>
+            <div class="result-row">
+              <span class="result-label" data-uk="€0 – €13,000 @ 0%" data-ru="€0 – €13,000 @ 0%">€0 – €13,000 @ 0%</span>
+              <span class="result-value" id="usc-band1">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="€13,001 – €28,700 @ 2%" data-ru="€13,001 – €28,700 @ 2%">€13,001 – €28,700 @ 2%</span>
+              <span class="result-value" id="usc-band2">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="€28,701 – €70,044 @ 4%" data-ru="€28,701 – €70,044 @ 4%">€28,701 – €70,044 @ 4%</span>
+              <span class="result-value" id="usc-band3">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="> €70,044 @ 8%" data-ru="> €70,044 @ 8%">> €70,044 @ 8%</span>
+              <span class="result-value" id="usc-band4">€0</span>
+            </div>
+            <div class="result-row" style="border-top: 1px solid rgba(200,169,81,0.3); margin-top:8px; padding-top:16px;">
+              <span class="result-label" style="color:var(--gold-light); font-weight:600" data-uk="USC РАЗОМ (рік)" data-ru="USC ИТОГО (год)">USC РАЗОМ (рік)</span>
+              <span class="result-value total highlight" id="usc-total">€0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-uk="USC на місяць" data-ru="USC в месяц">USC на місяць</span>
+              <span class="result-value" id="usc-monthly">€0</span>
+            </div>
+            <p class="result-note" id="usc-note" data-uk="USC не стягується з доходу менше €13,000 на рік. Соціальні виплати від DEASP не підлягають USC." data-ru="USC не взимается с дохода менее €13,000 в год. Соцвыплаты от DEASP не облагаются USC.">USC не стягується з доходу менше €13,000 на рік.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HERO -->
+<section class="hero hero-cta" id="home">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span>🇮🇪</span>
+        <span data-uk="Бухгалтерія в Ірландії" data-ru="Бухгалтерия в Ирландии">Бухгалтерія в Ірландії</span>
+      </div>
+      <h1>
+        <span data-uk="Payroll & Tax" data-ru="Payroll & Tax">Payroll & Tax</span><br>
+        <em data-uk="без зайвих турбот" data-ru="без лишних хлопот">без зайвих турбот</em>
+      </h1>
+      <p class="hero-sub" data-uk="Розрахунок заробітної плати, PAYE, PRSI, USC та податкових декларацій для малого бізнесу, ФОП та стартапів в Ірландії. Точно. Вчасно. Прозоро." data-ru="Расчёт заработной платы, PAYE, PRSI, USC и налоговых деклараций для малого бизнеса, ФЛП и стартапов в Ирландии. Точно. Вовремя. Прозрачно.">
+        Розрахунок заробітної плати, PAYE, PRSI, USC та податкових декларацій для малого бізнесу, ФОП та стартапів в Ірландії. Точно. Вчасно. Прозоро.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary" data-uk="Консультація" data-ru="Консультация">Консультація</a>
+        <a href="#services" class="btn-outline" data-uk="Мої послуги" data-ru="Мои услуги">Мої послуги</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-right" style="grid-column: 1 / -1;">
+        <div class="trust-cards">
+          <div class="trust-card">
+            <div class="trust-icon">🏛️</div>
+            <div>
+              <h4 data-uk="Робота з Revenue ROS" data-ru="Работа с Revenue ROS">Робота з Revenue ROS</h4>
+              <p data-uk="Повна інтеграція з Revenue Online System — подача всіх звітів в режимі реального часу." data-ru="Полная интеграция с Revenue Online System — подача всех отчётов в режиме реального времени.">Повна інтеграція з Revenue Online System — подача звітів в реальному часі.</p>
+            </div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">⚡</div>
+            <div>
+              <h4 data-uk="PAYE Modernisation 2019+" data-ru="PAYE Modernisation 2019+">PAYE Modernisation 2019+</h4>
+              <p data-uk="Працюю за новою системою звітності — ваш Payroll завжди актуальний та відповідає вимогам Revenue." data-ru="Работаю по новой системе отчётности — ваш Payroll всегда актуален и соответствует требованиям Revenue.">Ваш Payroll завжди актуальний та відповідає вимогам Revenue.</p>
+            </div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">💬</div>
+            <div>
+              <h4>Telegram, WhatsApp</h4>
+              <p data-uk="+353 87 355 8712" data-ru="+353 87 355 8712">+353 87 355 8712</p>
+            </div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">🎯</div>
+            <div>
+              <h4 data-uk="Автоматичне зарахування до пенсії (AE 2026)" data-ru="Авто-зачисление в пенсию (AE 2026)">Автоматичне зарахування до пенсії (AE 2026)</h4>
+              <p data-uk="Допоможу з My Future Fund — нова пенсійна система, яка стала обов'язковою з 1 січня 2026." data-ru="Помогу с My Future Fund — новая пенсионная система, обязательная с 1 января 2026.">Допоможу з My Future Fund — нова пенсійна система з 1 січня 2026.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / CONTENT -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="blog-header">
+      <div>
+        <div class="section-label" data-uk="Корисні матеріали" data-ru="Полезные материалы">Корисні матеріали</div>
+        <h2 class="section-title" data-uk="Статті та відео" data-ru="Статьи и видео">Статті та відео</h2>
+      </div>
+      <a href="#upload" class="btn-primary" style="white-space:nowrap; text-decoration:none; display:inline-block" data-uk="+ Додати матеріал" data-ru="+ Добавить материал">+ Додати матеріал</a>
+    </div>
+
+    <div class="blog-grid" id="contentGrid">
+
+      <!-- Article 1 -->
+      <div class="blog-card" onclick="openArticle('art1')">
+        <div class="blog-thumb" style="background: linear-gradient(135deg, #1a3a2a, #0d3320); position:relative;">
+          <span style="font-size:2.8rem; position:relative; z-index:1;">🇺🇦</span>
+          <div style="position:absolute; top:12px; right:12px; background:rgba(200,169,81,0.9); color:#1e1e2a; font-size:0.7rem; font-weight:700; padding:4px 10px; border-radius:20px; letter-spacing:0.05em;" data-uk="НОВЕ 2025" data-ru="НОВОЕ 2025">НОВЕ 2025</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-tag" data-uk="Стаття • ПФУ • Пенсія" data-ru="Статья • ПФУ • Пенсия">Стаття • ПФУ • Пенсія</div>
+          <h3 data-uk="Як зарахувати зарубіжний стаж для пенсії в Україні" data-ru="Как зачесть зарубежный стаж для пенсии в Украине">Як зарахувати зарубіжний стаж для пенсії в Україні</h3>
+          <p data-uk="З 2025 р. Уряд України дозволив зараховувати зарубіжний стаж (включаючи ірландський) до страхового стажу для призначення пенсії. Дізнайтесь, що потрібно зробити і які документи підготувати." data-ru="С 2025 г. Правительство Украины разрешило учитывать зарубежный стаж (включая ирландский) для назначения пенсии. Узнайте, что нужно сделать и какие документы подготовить.">З 2025 р. Уряд України дозволив зараховувати зарубіжний стаж (включаючи ірландський) до страхового стажу для призначення пенсії.</p>
+          <div class="blog-read-more" data-uk="Читати далі →" data-ru="Читать далее →">Читати далі →</div>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="blog-card" onclick="openArticle('art2')">
+        <div class="blog-thumb" style="background: linear-gradient(135deg, #1a2a3a, #0d1f33); position:relative;">
+          <span style="font-size:2.8rem; position:relative; z-index:1;">💰</span>
+          <div style="position:absolute; top:12px; right:12px; background:rgba(200,169,81,0.9); color:#1e1e2a; font-size:0.7rem; font-weight:700; padding:4px 10px; border-radius:20px;" data-uk="ПОРАДИ" data-ru="СОВЕТЫ">ПОРАДИ</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-tag" data-uk="Стаття • ПФУ • Добровільні внески" data-ru="Статья • ПФУ • Добровольные взносы">Стаття • ПФУ • Добровільні внески</div>
+          <h3 data-uk="Добровільні внески до ПФУ" data-ru="Добровольные взносы в ПФУ">Добровільні внески до ПФУ</h3>
+          <p data-uk="Живете в Ірландії? Можна платити внески до українського ПФУ онлайн і накопичувати страховий стаж. 1 місяць = 1 місяць стажу. Мінімум ~1 760 грн/міс (22% від мінімальної зарплати)." data-ru="Живёте в Ирландии? Можно платить взносы в украинский ПФУ онлайн и накапливать страховой стаж. 1 месяц = 1 месяц стажа. Минимум ~1 760 грн/мес (22% от минималки).">Живете в Ірландії? Платіть внески до ПФУ онлайн і накопичуйте страховий стаж. 1 місяць = 1 місяць стажу.</p>
+          <div class="blog-read-more" data-uk="Читати далі →" data-ru="Читать далее →">Читати далі →</div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="blog-card" onclick="openArticle('art3')">
+        <div class="blog-thumb" style="background: linear-gradient(135deg, #1a0d2e, #2d1a52); position:relative;">
+          <span style="font-size:2.8rem; position:relative; z-index:1;">📋</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-tag" data-uk="Стаття • PRSI • Payroll" data-ru="Статья • PRSI • Payroll">Стаття • PRSI • Payroll</div>
+          <h3 data-uk="PRSI 2026: класи, ставки та зміни" data-ru="PRSI 2026: классы, ставки и изменения">PRSI 2026: класи, ставки та зміни</h3>
+          <p data-uk="З жовтня 2024 по 2028 рр. ставки PRSI поступово зростають (+0.7% за 5 років). Дізнайтесь про всі класи, пороги та як правильно розрахувати свої внески." data-ru="С октября 2024 по 2028 гг. ставки PRSI постепенно растут (+0.7% за 5 лет). Узнайте о всех классах, порогах и как правильно рассчитать взносы.">З жовтня 2024 по 2028 рр. ставки PRSI поступово зростають. Дізнайтесь про всі класи та пороги.</p>
+          <div class="blog-read-more" data-uk="Читати далі →" data-ru="Читать далее →">Читати далі →</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ARTICLE MODALS -->
+    <div class="modal-overlay" id="art1" onclick="if(event.target===this)this.classList.remove('open')">
+      <div class="modal" style="max-width:700px;">
+        <button class="modal-close" onclick="document.getElementById('art1').classList.remove('open')">×</button>
+        <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin-bottom:12px;" data-uk="Стаття • ПФУ • Пенсія • 23.06.2025" data-ru="Статья • ПФУ • Пенсия • 23.06.2025">Стаття • ПФУ • Пенсія • 23.06.2025</div>
+        <h2 style="font-size:1.6rem; margin-bottom:16px;" data-uk="Як зарахувати зарубіжний стаж для пенсії в Україні" data-ru="Как зачесть зарубежный стаж для пенсии в Украине">Як зарахувати зарубіжний стаж для пенсії в Україні</h2>
+        <div class="article-body">
+          <div class="art-highlight" data-uk="🇮🇪 Ірландський стаж зараховується до страхового стажу ПФУ для визначення права на пенсію, але не впливає на розмір виплат (немає двостороннього договору між Україною та Ірландією)." data-ru="🇮🇪 Ирландский стаж засчитывается в страховой стаж ПФУ для определения права на пенсию, но не влияет на размер выплат (нет двустороннего договора между Украиной и Ирландией).">🇮🇪 Ірландський стаж зараховується до страхового стажу ПФУ для визначення права на пенсію, але не впливає на розмір виплат (немає двостороннього договору між Україною та Ірландією).</div>
+          <h4 class="art-h4" data-uk="Що потрібно зробити:" data-ru="Что нужно сделать:">Що потрібно зробити:</h4>
+          <div class="art-step"><span class="art-step-num">1</span><div data-uk="Отримати офіційний документ з Ірландії — підтвердження сплати PRSI (від Dept of Social Protection / MyWelfare)" data-ru="Получить официальный документ из Ирландии — подтверждение уплаты PRSI (от Dept of Social Protection / MyWelfare)">Отримати офіційний документ з Ірландії — підтвердження сплати PRSI (від Dept of Social Protection / MyWelfare)</div></div>
+          <div class="art-step"><span class="art-step-num">2</span><div data-uk="Перевірити чи потрібен апостиль (Ірландія — член Гаазької конвенції 1961 р., тому потрібен апостиль)" data-ru="Проверить, нужен ли апостиль (Ирландия — член Гаагской конвенции 1961 г., поэтому апостиль нужен)">Перевірити чи потрібен апостиль (Ірландія — член Гаазької конвенції 1961 р., тому потрібен апостиль)</div></div>
+          <div class="art-step"><span class="art-step-num">3</span><div data-uk="Зробити нотаріально засвідчений переклад документа на українську мову" data-ru="Сделать нотариально заверенный перевод документа на украинский язык">Зробити нотаріально засвідчений переклад документа на українську мову</div></div>
+          <div class="art-step"><span class="art-step-num">4</span><div data-uk="Передати документи до Пенсійного фонду України (ПФУ) — особисто або через представника за довіреністю" data-ru="Передать документы в Пенсионный фонд Украины (ПФУ) — лично или через представителя по доверенности">Передати документи до Пенсійного фонду України (ПФУ)</div></div>
+          <div class="art-warn" data-uk="⏱️ Починайте процедуру за 6–12 місяців до пенсійного віку — документообіг між країнами потребує часу." data-ru="⏱️ Начинайте процедуру за 6–12 месяцев до пенсионного возраста — документооборот между странами занимает время.">⏱️ Починайте процедуру за 6–12 місяців до пенсійного віку — документообіг між країнами потребує часу.</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:16px;" data-uk="Джерело: Міністерство соціальної політики України (msp.gov.ua)" data-ru="Источник: Министерство социальной политики Украины (msp.gov.ua)">Джерело: Міністерство соціальної політики України (msp.gov.ua)</p>
+        </div>
+        <a href="#contact" class="btn-primary" style="display:inline-block; margin-top:24px; text-decoration:none;" onclick="document.getElementById('art1').classList.remove('open')" data-uk="Отримати допомогу з документами →" data-ru="Получить помощь с документами →">Отримати допомогу з документами →</a>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="art2" onclick="if(event.target===this)this.classList.remove('open')">
+      <div class="modal" style="max-width:700px;">
+        <button class="modal-close" onclick="document.getElementById('art2').classList.remove('open')">×</button>
+        <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin-bottom:12px;">Стаття • ПФУ • Добровільні внески</div>
+        <h2 style="font-size:1.6rem; margin-bottom:16px;" data-uk="Добровільні внески до ПФУ" data-ru="Добровольные взносы в ПФУ">Добровільні внески до ПФУ</h2>
+        <div class="article-body">
+          <div class="art-highlight" data-uk="💡 Це офіційна, законна схема. 1 оплачений місяць = 1 місяць страхового стажу, який впливає і на право, і на розмір пенсії в Україні." data-ru="💡 Это официальная, законная схема. 1 оплаченный месяц = 1 месяц страхового стажа, который влияет и на право, и на размер пенсии в Украине.">💡 Це офіційна, законна схема. 1 оплачений місяць = 1 місяць страхового стажу, який впливає і на право, і на розмір пенсії в Україні.</div>
+          <h4 class="art-h4" data-uk="Скільки потрібно платити (2025):" data-ru="Сколько нужно платить (2025):">Скільки потрібно платити (2025):</h4>
+          <div class="art-info-row"><span data-uk="Розмір внеску" data-ru="Размер взноса">Розмір внеску</span><strong>22% від мінімалки</strong></div>
+          <div class="art-info-row"><span data-uk="Мінімальна зарплата в Україні" data-ru="Минималка в Украине">Мінімальна зарплата в Україні</span><strong>≈ 8 000 грн</strong></div>
+          <div class="art-info-row"><span data-uk="Мінімальний внесок на місяць" data-ru="Минимальный взнос в месяц">Мінімальний внесок на місяць</span><strong style="color:var(--dark-green)">≈ 1 760 грн</strong></div>
+          <h4 class="art-h4" style="margin-top:20px;" data-uk="Як оформити онлайн (з Ірландії):" data-ru="Как оформить онлайн (из Ирландии):">Як оформити онлайн (з Ірландії):</h4>
+          <div class="art-step"><span class="art-step-num">1</span><div data-uk="Зайти в електронний кабінет ПФУ або через Дію" data-ru="Зайти в электронный кабинет ПФУ или через Дию">Зайти в електронний кабінет ПФУ або через Дію</div></div>
+          <div class="art-step"><span class="art-step-num">2</span><div data-uk="Подати заяву на добровільну участь та укласти електронний договір" data-ru="Подать заявление на добровольное участие и заключить электронный договор">Подати заяву на добровільну участь та укласти електронний договір</div></div>
+          <div class="art-step"><span class="art-step-num">3</span><div data-uk="Отримати реквізити для оплати" data-ru="Получить реквизиты для оплаты">Отримати реквізити для оплати</div></div>
+          <div class="art-step"><span class="art-step-num">4</span><div data-uk="Сплачувати щомісяця з будь-якого банку (в т.ч. ірландського — Revolut, AIB, BOI тощо)" data-ru="Платить ежемесячно с любого банка (в т.ч. ирландского — Revolut, AIB, BOI и т.д.)">Сплачувати щомісяця з будь-якого банку (в т.ч. ірландського — Revolut, AIB, BOI)</div></div>
+
+        </div>
+        <a href="#contact" class="btn-primary" style="display:inline-block; margin-top:24px; text-decoration:none;" onclick="document.getElementById('art2').classList.remove('open')" data-uk="Допомогти з оформленням →" data-ru="Помочь с оформлением →">Допомогти з оформленням →</a>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="art3" onclick="if(event.target===this)this.classList.remove('open')">
+      <div class="modal" style="max-width:700px;">
+        <button class="modal-close" onclick="document.getElementById('art3').classList.remove('open')">×</button>
+        <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); margin-bottom:12px;">Стаття • PRSI • 2026</div>
+        <h2 style="font-size:1.6rem; margin-bottom:16px;" data-uk="PRSI 2026: класи, ставки та поступове зростання" data-ru="PRSI 2026: классы, ставки и постепенный рост">PRSI 2026: класи, ставки та поступове зростання</h2>
+        <div class="article-body">
+          <div class="art-highlight" data-uk="З жовтня 2024 по 2028 рр. Ірландія впроваджує щорічне підвищення ставок PRSI класу A (+0.7% за 5 років) для фінансування пенсійного фонду та збереження пенсійного віку 66 років." data-ru="С октября 2024 по 2028 гг. Ирландия вводит ежегодное повышение ставок PRSI класса A (+0.7% за 5 лет) для финансирования пенсионного фонда и сохранения пенсионного возраста 66 лет.">З жовтня 2024 по 2028 рр. Ірландія впроваджує щорічне підвищення ставок PRSI класу A (+0.7% за 5 років).</div>
+          <h4 class="art-h4" data-uk="Графік підвищення ставок:" data-ru="График повышения ставок:">Графік підвищення ставок:</h4>
+          <div class="art-table">
+            <div class="art-table-row art-table-head"><span data-uk="Дата" data-ru="Дата">Дата</span><span data-uk="Підвищення" data-ru="Повышение">Підвищення</span><span data-uk="Сукупно" data-ru="Итого">Сукупно</span></div>
+            <div class="art-table-row"><span>Жовтень 2024</span><span>+0.10%</span><span>+0.10%</span></div>
+            <div class="art-table-row"><span>Жовтень 2025</span><span>+0.10%</span><span>+0.20%</span></div>
+            <div class="art-table-row"><span>Жовтень 2026</span><span>+0.15%</span><span>+0.35%</span></div>
+            <div class="art-table-row"><span>Жовтень 2027</span><span>+0.15%</span><span>+0.50%</span></div>
+            <div class="art-table-row art-table-last"><span>Жовтень 2028</span><span>+0.20%</span><span style="color:var(--dark-green); font-weight:700">+0.70%</span></div>
+          </div>
+          <h4 class="art-h4" style="margin-top:20px;" data-uk="Ставки PRSI клас A (2026):" data-ru="Ставки PRSI класс A (2026):">Ставки PRSI клас A (2026):</h4>
+          <div class="art-info-row"><span data-uk="Працівник (клас A1, до 30.09.2026)" data-ru="Работник (класс A1, до 30.09.2026)">Працівник (клас A1, до 30.09.2026)</span><strong>4.2%</strong></div>
+          <div class="art-info-row"><span data-uk="Працівник (клас A1, з 01.10.2026)" data-ru="Работник (класс A1, с 01.10.2026)">Працівник (клас A1, з 01.10.2026)</span><strong style="color:var(--dark-green)">4.35%</strong></div>
+          <div class="art-info-row"><span data-uk="Роботодавець A1 (+1% NTFL)" data-ru="Работодатель A1 (+1% NTFL)">Роботодавець A1 (+1% NTFL)</span><strong>11.25% + 1%</strong></div>
+          <div class="art-info-row"><span data-uk="Роботодавець A0/AX/AL (NTFL)" data-ru="Работодатель A0/AX/AL (NTFL)">Роботодавець A0/AX/AL (+1% NTFL)</span><strong>9.0% + 1%</strong></div>
+          <div class="art-info-row"><span data-uk="NTFL (роботодавець)" data-ru="NTFL (работодатель)">NTFL (роботодавець)</span><strong>1.0%</strong></div>
+          <div class="art-info-row"><span data-uk="Поріг звільнення" data-ru="Порог освобождения">Поріг звільнення</span><strong>€352 / тижд.</strong></div>
+        </div>
+        <a href="#calculators" class="btn-primary" style="display:inline-block; margin-top:24px; text-decoration:none;" onclick="document.getElementById('art3').classList.remove('open')" data-uk="Розрахувати PRSI →" data-ru="Рассчитать PRSI →">Розрахувати PRSI →</a>
+      </div>
+    </div>
+
+    <!-- UPLOAD AREA -->
+    <div class="upload-area" id="upload" onclick="document.getElementById('fileInput').click()">
+      <div class="upload-icon">📤</div>
+      <h4 data-uk="Завантажити статтю або відео" data-ru="Загрузить статью или видео">Завантажити статтю або відео</h4>
+      <p data-uk="Перетягніть файл сюди або натисніть щоб вибрати. PDF, DOCX, MP4, YouTube посилання." data-ru="Перетащите файл сюда или нажмите чтобы выбрать. PDF, DOCX, MP4, YouTube ссылки.">Перетягніть файл сюди або натисніть щоб вибрати. PDF, DOCX, MP4.</p>
+      <button class="upload-btn" data-uk="Обрати файл" data-ru="Выбрать файл">Обрати файл</button>
+      <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.mp4,.avi,.mov,.jpg,.png" onchange="handleUpload(event)">
+      <div class="upload-list" id="uploadList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="section-label" data-uk="Зв'яжіться" data-ru="Свяжитесь">Зв'яжіться</div>
+        <h2 class="section-title" data-uk="Почнімо співпрацю" data-ru="Начнём сотрудничество">Почнімо співпрацю</h2>
+        <p class="section-sub" data-uk="Маєте питання з Payroll, PAYE, PRSI чи податками? Я готова допомогти. Напишіть або зателефонуйте — відповідаю швидко." data-ru="Есть вопросы по Payroll, PAYE, PRSI или налогам? Готова помочь. Напишите или позвоните — отвечаю быстро.">
+          Маєте питання з Payroll, PAYE, PRSI чи податками? Я готова допомогти.
+        </p>
+        <div class="contact-info-cards">
+          <a href="tel:+353873558712" class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <div class="contact-card-text">
+              <h4 data-uk="Телефон" data-ru="Телефон">Телефон</h4>
+              <p>+353 87 355 8712</p>
+            </div>
+          </a>
+          <a href="https://t.me/+353873558712" target="_blank" class="contact-card">
+            <div class="contact-card-icon">✈️</div>
+            <div class="contact-card-text">
+              <h4>Telegram</h4>
+              <p>+353 87 355 8712</p>
+            </div>
+          </a>
+          <a href="https://wa.me/353873558712" target="_blank" class="contact-card">
+            <div class="contact-card-icon">💬</div>
+            <div class="contact-card-text">
+              <h4>WhatsApp</h4>
+              <p>+353 87 355 8712</p>
+            </div>
+          </a>
+          <a href="#tip" class="contact-card" style="border-color: rgba(200,169,81,0.3)">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #c8a951, #dfc07a)">🌟</div>
+            <div class="contact-card-text">
+              <h4 data-uk="Підтримати Інну" data-ru="Поддержать Инну">Підтримати Інну</h4>
+              <p data-uk="Monobank — швидко та легко" data-ru="Monobank — быстро и легко">Monobank — швидко та легко</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="lead-form">
+        <h3 data-uk="Надіслати запит" data-ru="Отправить запрос">Надіслати запит</h3>
+        <p data-uk="Заповніть форму і Інна зв'яжеться з вами протягом 24 годин." data-ru="Заполните форму и Инна свяжется с вами в течение 24 часов.">Заповніть форму і я зв'яжусь з вами протягом 24 годин.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-uk="Ваше ім'я" data-ru="Ваше имя">Ваше ім'я</label>
+            <input type="text" id="lead-name" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label data-uk="Телефон / Email" data-ru="Телефон / Email">Телефон / Email</label>
+            <input type="text" id="lead-contact" placeholder="+353... або email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-uk="Тип послуги" data-ru="Тип услуги">Тип послуги</label>
+          <select id="lead-service">
+            <option data-uk="Оберіть послугу..." data-ru="Выберите услугу...">Оберіть послугу...</option>
+            <option data-uk="Payroll / PAYE" data-ru="Payroll / PAYE">Payroll / PAYE</option>
+            <option data-uk="PRSI консультація" data-ru="PRSI консультация">PRSI консультація</option>
+            <option data-uk="USC розрахунок" data-ru="USC расчёт">USC розрахунок</option>
+            <option data-uk="Income Tax Return (Form 11)" data-ru="Income Tax Return (Form 11)">Income Tax Return (Form 11)</option>
+            <option data-uk="Corporation Tax (CT1)" data-ru="Corporation Tax (CT1)">Corporation Tax (CT1)</option>
+            <option data-uk="VAT Returns" data-ru="VAT Returns">VAT Returns</option>
+            <option data-uk="RCT" data-ru="RCT">RCT</option>
+            <option data-uk="Auto Enrolment (пенсія)" data-ru="Auto Enrolment (пенсия)">Auto Enrolment (пенсія)</option>
+            <option data-uk="Консультація" data-ru="Консультация">Консультація</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-uk="Повідомлення" data-ru="Сообщение">Повідомлення</label>
+          <textarea id="lead-message" data-uk="Опишіть ваш запит..." data-ru="Опишите ваш запрос...">Опишіть ваш запит...</textarea>
+        </div>
+        <button class="submit-btn" onclick="submitLead()" data-uk="📨 Надіслати запит" data-ru="📨 Отправить запрос">📨 Надіслати запит</button>
+        <div class="form-success" id="formSuccess">
+          ✅ <span data-uk="Дякую! Я зв'яжусь з вами найближчим часом." data-ru="Спасибо! Свяжусь с вами в ближайшее время.">Дякую! Зв'яжусь з вами найближчим часом.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIP / DONATE -->
+<div class="tip-banner" id="tip">
+  <h2 data-uk="Корисна інформація — безкоштовно 💛" data-ru="Полезная информация — бесплатно 💛">Корисна інформація — безкоштовно 💛</h2>
+  <p data-uk="Якщо мої матеріали вам допомогли — ви можете підтримати мою роботу через Monobank. Це не обов'язково, але дуже приємно 🙏" data-ru="Если мои материалы вам помогли — вы можете поддержать мою работу через Monobank. Это не обязательно, но очень приятно 🙏">
+    Якщо мої матеріали вам допомогли — ви можете підтримати мою роботу через Monobank. Це не обов'язково, але дуже приємно 🙏
+  </p>
+  <a href="https://send.monobank.ua/8xMtMas3z5" target="_blank" class="tip-btn">
+    🌻 <span data-uk="Віддячити через Monobank" data-ru="Отблагодарить через Monobank">Віддячити через Monobank</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Інна<span>.</span></div>
+        <p class="footer-desc" data-uk="Payroll & Tax Specialist в Ірландії. Допомагаю малому бізнесу, ФОП та стартапам з бухгалтерією, PAYE, PRSI, USC та податковими деклараціями." data-ru="Payroll & Tax Specialist в Ирландии. Помогаю малому бизнесу, ФЛП и стартапам с бухгалтерией, PAYE, PRSI, USC и налоговыми декларациями.">
+          Payroll & Tax Specialist в Ірландії. Допомагаю малому бізнесу, ФОП та стартапам з бухгалтерією, PAYE, PRSI, USC та податковими деклараціями.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk="Послуги" data-ru="Услуги">Послуги</h5>
+        <ul>
+          <li><a href="#services">Payroll / PAYE</a></li>
+          <li><a href="#services">PRSI & USC</a></li>
+          <li><a href="#services">Tax Returns</a></li>
+          <li><a href="#services" data-uk="VAT & RCT" data-ru="VAT & RCT">VAT & RCT</a></li>
+          <li><a href="#services" data-uk="Auto Enrolment" data-ru="Auto Enrolment">Auto Enrolment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk="Контакти" data-ru="Контакты">Контакти</h5>
+        <ul>
+          <li><a href="tel:+353873558712">📞 +353 87 355 8712</a></li>
+          <li><a href="https://t.me/+353873558712">✈️ Telegram</a></li>
+          <li><a href="https://wa.me/353873558712">💬 WhatsApp</a></li>
+          <li><a href="https://send.monobank.ua/8xMtMas3z5" target="_blank" data-uk="🌻 Підтримати" data-ru="🌻 Поддержать">🌻 Під тримати</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk="Юридична інформація" data-ru="Юридическая информация">Юридична інформація</h5>
+        <ul>
+          <li><a href="#" onclick="openLegalModal('oferta'); return false;" data-uk="Публічна оферта" data-ru="Публичная оферта">Публічна оферта</a></li>
+          <li><a href="#" onclick="openLegalModal('privacy'); return false;" data-uk="Політика конфіденційності" data-ru="Политика конфиденциальности">Політика конфіденційності</a></li>
+          <li><a href="#" onclick="openLegalModal('disclaimer'); return false;">Disclaimer</a></li>
+          <li><a href="#" onclick="openLegalModal('cookie'); return false;">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy" data-uk="© 2026 Інна — Payroll & Tax Specialist, Ireland" data-ru="© 2026 Инна — Payroll & Tax Specialist, Ireland">© 2026 Інна — Payroll & Tax Specialist, Ireland</span>
+      <span class="footer-legal" data-uk="Розрахунки є орієнтовними. Зверніться за точною консультацією." data-ru="Расчёты ориентировочные. Обратитесь за точной консультацией.">Розрахунки є орієнтовними. Зверніться за точною консультацією.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ Файл завантажено успішно!</div>
+
+<script>
+// ── LANGUAGE ──
+let currentLang = 'uk';
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    if (b.textContent.includes(lang === 'uk' ? 'Укр' : 'Рус')) b.classList.add('active');
+  });
+  document.querySelectorAll('[data-uk]').forEach(el => {
+    const val = lang === 'uk' ? el.getAttribute('data-uk') : el.getAttribute('data-ru');
+    if (val !== null) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = val;
+      else if (el.tagName === 'OPTION') el.textContent = val;
+      else el.textContent = val;
+    }
+  });
+  // Update HTML lang
+  document.documentElement.lang = lang;
+  // Update meta
+  const desc = lang === 'uk'
+    ? 'Інна — експерт з бухгалтерії та нарахування зарплат в Ірландії. Payroll, PAYE, PRSI, USC, Tax Returns.'
+    : 'Инна — эксперт по бухгалтерии и расчёту зарплат в Ирландии. Payroll, PAYE, PRSI, USC, Tax Returns.';
+  document.querySelector('meta[name="description"]').setAttribute('content', desc);
+  // Update lang buttons styling
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.remove('active');
+    if ((lang === 'uk' && b.textContent.includes('Укр')) ||
+        (lang === 'ru' && b.textContent.includes('Рус'))) {
+      b.classList.add('active');
+    }
+  });
+}
+
+// ── NAV ──
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// ── SCROLL PROGRESS ──
+window.addEventListener('scroll', () => {
+  const progress = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  document.getElementById('scrollProgress').style.width = progress + '%';
+});
+
+// ── CALC TABS ──
+function switchTab(name) {
+  document.querySelectorAll('.calc-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.calc-panel').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('panel-' + name).classList.add('active');
+}
+
+// ── PAYROLL CALCULATOR ──
+function fmt(n) { return '€' + n.toLocaleString('en-IE', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+
+function updatePayroll() {
+  const payType = document.getElementById('pay-type').value;
+  let amount = parseFloat(document.getElementById('pay-amount').value) || 0;
+  const hours = parseFloat(document.getElementById('hours-week').value) || 39;
+  const status = document.getElementById('tax-status').value;
+  const pensionPct = parseFloat(document.getElementById('pension-pct').value) || 0;
+
+  document.getElementById('hours-group').style.display = payType === 'hourly' ? 'block' : 'none';
+
+  let annualGross = 0;
+  if (payType === 'annual') annualGross = amount;
+  else if (payType === 'weekly') annualGross = amount * 52;
+  else if (payType === 'hourly') annualGross = amount * hours * 52;
+
+  // Pension
+  const pensionAmt = annualGross * (pensionPct / 100);
+  const taxableGross = annualGross - pensionAmt;
+
+  // Tax Credits 2026
+  let credits = 4000; // Personal + Employee
+  let srcop = 44000;
+  if (status === 'married') { credits = 8000; srcop = 88000; }
+  else if (status === 'married2') { credits = 8000; srcop = 53000; }
+
+  // Income Tax
+  let it = 0;
+  if (taxableGross <= srcop) {
+    it = taxableGross * 0.20;
+  } else {
+    it = srcop * 0.20 + (taxableGross - srcop) * 0.40;
+  }
+  it = Math.max(0, it - credits);
+
+  // USC 2026
+  let usc = 0;
+  if (annualGross > 13000) {
+    const band1 = Math.min(annualGross, 28700) - 13000;
+    const band2 = Math.max(0, Math.min(annualGross, 70044) - 28700);
+    const band3 = Math.max(0, annualGross - 70044);
+    usc = band1 * 0.02 + band2 * 0.04 + band3 * 0.08;
+  }
+
+  // PRSI Class A (4.2% до 30.09.2026; поріг звільнення €352/тижд = €18304/рік)
+  // AX кредит не враховуємо в загальному payroll calc — для точного розрахунку PRSI окремий калькулятор
+  let prsi = 0;
+  if (annualGross >= 38 * 52) { // мінімум €38/тижд
+    if (annualGross > 352 * 52) {
+      prsi = annualGross * 0.042; // спрощений розрахунок без кредиту
+    }
+  }
+
+  const totalDeductions = pensionAmt + it + usc + prsi;
+  const netAnnual = annualGross - totalDeductions;
+
+  // Employer PRSI Class A (simplified: A1 rate 11.25% for >€552/wk, else 9.0%; NTFL included)
+  const weeklyGross = annualGross / 52;
+  const emplPrsiRate = weeklyGross > 552 ? 0.1125 : 0.09;
+  const emplPrsiAnnual = annualGross > 352 * 52 ? annualGross * emplPrsiRate : annualGross * 0.09;
+  const ntflAnnual = annualGross * 0.01; // 1% NTFL included in emplPrsiAnnual
+  const totalEmployerCost = annualGross + emplPrsiAnnual;
+  const totalTaxBurden = ((it + usc + prsi + emplPrsiAnnual) / annualGross * 100);
+
+  // Update main result panel
+  document.getElementById('res-gross').textContent = fmt(annualGross);
+  document.getElementById('res-pension').textContent = fmt(pensionAmt);
+  document.getElementById('res-it').textContent = fmt(it);
+  document.getElementById('res-usc').textContent = fmt(usc);
+  document.getElementById('res-prsi').textContent = fmt(prsi);
+  document.getElementById('res-net').textContent = fmt(netAnnual);
+  document.getElementById('res-net-month').textContent = fmt(netAnnual / 12);
+  document.getElementById('res-net-week').textContent = fmt(netAnnual / 52);
+
+  // Show/hide breakdown table and info banner
+  const bdTable = document.getElementById('breakdown-table');
+  const infoBanner = document.getElementById('payroll-info-banner');
+  if (annualGross > 0) {
+    bdTable.style.display = 'grid';
+    infoBanner.style.display = 'flex';
+
+    // Helper: fill a row with annual / monthly / weekly
+    function bd(idYr, idMo, idWk, annual) {
+      document.getElementById(idYr).textContent = fmt(annual);
+      if (document.getElementById(idMo)) document.getElementById(idMo).textContent = fmt(annual/12) + (currentLang==='uk' ? ' /міс' : ' /мес');
+      if (document.getElementById(idWk)) document.getElementById(idWk).textContent = fmt(annual/52) + (currentLang==='uk' ? ' /тижд' : ' /нед');
+    }
+
+    // EMPLOYEE breakdown
+    bd('bd-emp-it-yr',    'bd-emp-it-mo',    'bd-emp-it-wk',    it);
+    bd('bd-emp-usc-yr',   'bd-emp-usc-mo',   'bd-emp-usc-wk',   usc);
+    bd('bd-emp-prsi-yr',  'bd-emp-prsi-mo',  'bd-emp-prsi-wk',  prsi);
+    bd('bd-emp-total-yr', 'bd-emp-total-mo', 'bd-emp-total-wk', totalDeductions);
+    bd('bd-emp-net-yr',   'bd-emp-net-mo',   'bd-emp-net-wk',   netAnnual);
+
+    // Pension row
+    const penRow = document.getElementById('bd-pension-row');
+    if (pensionAmt > 0) {
+      penRow.style.display = 'flex';
+      bd('bd-emp-pen-yr', 'bd-emp-pen-mo', 'bd-emp-pen-wk', pensionAmt);
+    } else {
+      penRow.style.display = 'none';
+    }
+
+    // EMPLOYER breakdown
+    bd('bd-empr-gross-yr', 'bd-empr-gross-mo', 'bd-empr-gross-wk', annualGross);
+    bd('bd-empr-prsi-yr',  'bd-empr-prsi-mo',  'bd-empr-prsi-wk',  emplPrsiAnnual);
+    bd('bd-empr-ntfl-yr',  'bd-empr-ntfl-mo',  'bd-empr-ntfl-wk',  ntflAnnual);
+    bd('bd-empr-total-yr', 'bd-empr-total-mo', 'bd-empr-total-wk', totalEmployerCost);
+    document.getElementById('bd-tax-burden').textContent = totalTaxBurden.toFixed(1) + '%';
+
+  } else {
+    bdTable.style.display = 'none';
+    infoBanner.style.display = 'none';
+  }
+}
+
+// ── TAX CREDITS CALCULATOR ──
+function calcTaxCredits() {
+  const status = document.getElementById('tc-status').value;
+  const disabled = document.getElementById('tc-disabled').value;
+  const spccc = document.getElementById('tc-spccc').value;
+
+  let personal = 2000, employee = 2000, additional = 0;
+  if (status === 'married') personal = 4000;
+  if (status === 'widow') { personal = 2000; additional += 2250; }
+  if (disabled === 'yes') additional += 3800;
+  if (spccc === 'yes') additional += 1900;
+
+  const total = personal + employee + additional;
+  document.getElementById('tc-personal').textContent = fmt(personal);
+  document.getElementById('tc-employee').textContent = fmt(employee);
+  document.getElementById('tc-additional').textContent = fmt(additional);
+  document.getElementById('tc-total').textContent = fmt(total);
+  document.getElementById('tc-monthly').textContent = fmt(total / 12);
+  document.getElementById('tc-weekly').textContent = fmt(total / 52);
+}
+
+// PRSI CALCULATOR - SW14, Dept of Social Protection, January 2026
+// NOTE: 1% NTFL is INCLUDED in employer rates for Class A and H (SW14 p.19)
+// Class A employee rate: 4.2% until 30 Sep 2026 | 4.35% from 1 Oct 2026
+// PRSI Credit: only for subclass AX (euro352.01 to euro424): max euro12/wk, reduced by 1/6 of earnings over euro352.01
+function calcPRSI() {
+  const weekly = parseFloat(document.getElementById('prsi-weekly').value) || 0;
+  const cls = document.getElementById('prsi-class').value;
+
+  let empGross = 0, empCredit = 0, empNet = 0;
+  let emplTotal = 0;
+  let ntflDisplay = 0;
+  let subclass = '\u2014';
+  let note = '';
+
+  if (cls === 'A') {
+
+    if (weekly < 38) {
+      // Below Class A threshold: Class J applies
+      subclass = 'J (< \u20ac38/wk)';
+      empGross = 0; empNet = 0;
+      emplTotal = weekly * 0.007;
+      ntflDisplay = 0;
+
+    } else if (weekly <= 352) {
+      // A0: euro38 - euro352 | Employee: 0% | Employer: 9.0% (incl. 1% NTFL)
+      subclass = 'A0';
+      empGross = 0; empNet = 0;
+      emplTotal = weekly * 0.09;
+      ntflDisplay = weekly * 0.01;
+
+    } else if (weekly <= 424) {
+      // AX: euro352.01 - euro424 | Employee: 4.2% minus PRSI Credit | Employer: 9.0% (incl. 1% NTFL)
+      // PRSI Credit = euro12.00 - (1/6 x (earnings - euro352.01)), minimum 0
+      subclass = 'AX';
+      empGross = weekly * 0.042;
+      const excess = Math.max(0, weekly - 352.01);
+      empCredit = Math.max(0, 12 - (excess / 6));
+      empNet = Math.max(0, empGross - empCredit);
+      emplTotal = weekly * 0.09;
+      ntflDisplay = weekly * 0.01;
+
+    } else if (weekly <= 552) {
+      // AL: euro424.01 - euro552 | Employee: 4.2% | Employer: 9.0% (incl. 1% NTFL) | No credit
+      subclass = 'AL';
+      empGross = weekly * 0.042;
+      empNet = empGross;
+      emplTotal = weekly * 0.09;
+      ntflDisplay = weekly * 0.01;
+
+    } else {
+      // A1: over euro552 | Employee: 4.2% | Employer: 11.25% (incl. 1% NTFL)
+      subclass = 'A1';
+      empGross = weekly * 0.042;
+      empNet = empGross;
+      emplTotal = weekly * 0.1125;
+      ntflDisplay = weekly * 0.01;
+    }
+
+    note = currentLang === 'uk'
+      ? '\u0421\u0442\u0430\u0432\u043a\u0430 4.2% \u0434\u0456\u0454 \u0434\u043e 30.09.2026 \u2192 4.35% \u0437 01.10.2026. 1% NTFL \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043e \u0432 \u0441\u0442\u0430\u0432\u043a\u0443 \u0440\u043e\u0431\u043e\u0442\u043e\u0434\u0430\u0432\u0446\u044f. \u0414\u0436\u0435\u0440\u0435\u043b\u043e: SW14 Jan 2026, Dept of Social Protection.'
+      : '\u0421\u0442\u0430\u0432\u043a\u0430 4.2% \u0434\u043e 30.09.2026 \u2192 4.35% \u0441 01.10.2026. 1% NTFL \u0432\u043a\u043b\u044e\u0447\u0451\u043d \u0432 \u0441\u0442\u0430\u0432\u043a\u0443 \u0440\u0430\u0431\u043e\u0442\u043e\u0434\u0430\u0442\u0435\u043b\u044f. \u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a: SW14 Jan 2026.';
+
+  } else if (cls === 'J') {
+    subclass = weekly <= 500 ? 'J0' : 'J1';
+    empGross = 0; empNet = 0;
+    emplTotal = weekly * 0.007;
+    ntflDisplay = 0;
+    note = currentLang === 'uk'
+      ? '\u041a\u043b\u0430\u0441 J: \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a \u2014 0%. \u0420\u043e\u0431\u043e\u0442\u043e\u0434\u0430\u0432\u0435\u0446\u044c 0.7% (\u0434\u043e 30.09.2026), 0.85% \u0437 01.10.2026. \u041d\u0435\u043c\u0430\u0454 NTFL.'
+      : '\u041a\u043b\u0430\u0441\u0441 J: \u0440\u0430\u0431\u043e\u0442\u043d\u0438\u043a \u2014 0%. \u0420\u0430\u0431\u043e\u0442\u043e\u0434\u0430\u0442\u0435\u043b\u044c 0.7% (\u0434\u043e 30.09.2026), 0.85% \u0441 01.10.2026. NTFL \u043d\u0435\u0442.';
+
+  } else if (cls === 'S') {
+    subclass = weekly <= 500 ? 'S0' : 'S1';
+    empGross = weekly * 0.042;
+    empNet = empGross;
+    emplTotal = 0; ntflDisplay = 0;
+    note = currentLang === 'uk'
+      ? '\u041a\u043b\u0430\u0441 S (\u0441\u0430\u043c\u043e\u0437\u0430\u0439\u043d\u044f\u0442\u0438\u0439): 4.2% \u0434\u043e 30.09.2026 \u2192 4.35% \u0437 01.10.2026. \u041c\u0456\u043d\u0456\u043c\u0443\u043c \u20ac650/\u0440\u0456\u043a. \u0411\u0435\u0437 PRSI \u0440\u043e\u0431\u043e\u0442\u043e\u0434\u0430\u0432\u0446\u044f \u0442\u0430 NTFL.'
+      : '\u041a\u043b\u0430\u0441\u0441 S (\u0441\u0430\u043c\u043e\u0437\u0430\u043d\u044f\u0442\u044b\u0439): 4.2% \u0434\u043e 30.09.2026 \u2192 4.35% \u0441 01.10.2026. \u041c\u0438\u043d\u0438\u043c\u0443\u043c \u20ac650/\u0433\u043e\u0434. \u0411\u0435\u0437 PRSI \u0440\u0430\u0431\u043e\u0442\u043e\u0434\u0430\u0442\u0435\u043b\u044f \u0438 NTFL.';
+
+  } else if (cls === 'B') {
+    if (weekly <= 352) {
+      subclass = 'B0'; empGross = 0; empNet = 0; emplTotal = weekly * 0.0221;
+    } else if (weekly <= 500) {
+      subclass = 'BX'; empGross = weekly * 0.011; empNet = empGross; emplTotal = weekly * 0.0221;
+    } else {
+      subclass = 'B1';
+      const firstBand = Math.min(weekly, 1443) * 0.011;
+      const restBand  = Math.max(0, weekly - 1443) * 0.042;
+      empGross = firstBand + restBand;
+      empNet = empGross;
+      emplTotal = weekly * 0.0221;
+    }
+    ntflDisplay = 0;
+    note = currentLang === 'uk'
+      ? '\u041a\u043b\u0430\u0441 B: \u043f\u043e\u0441\u0442\u0456\u0439\u043d\u0456 \u043f\u0435\u043d\u0441. \u0434\u0435\u0440\u0436. \u0441\u043b\u0443\u0436\u0431\u043e\u0432\u0446\u0456, Garda \u0434\u043e 6 \u043a\u0432\u0456\u0442. 1995. \u041d\u0435\u043c\u0430\u0454 NTFL.'
+      : '\u041a\u043b\u0430\u0441\u0441 B: \u043f\u043e\u0441\u0442. \u043f\u0435\u043d\u0441. \u0433\u043e\u0441\u0441\u043b\u0443\u0436\u0430\u0449\u0438\u0435, Garda \u0434\u043e 6 \u0430\u043f\u0440. 1995. NTFL \u043d\u0435\u0442.';
+  }
+
+  const totalWeek = empNet + emplTotal;
+
+  document.getElementById('prsi-subclass').textContent = subclass;
+  document.getElementById('prsi-employee').textContent = fmt(empGross);
+  document.getElementById('prsi-credit').textContent = empCredit > 0 ? '\u2013' + fmt(empCredit) : '\u2013\u20ac0.00';
+  document.getElementById('prsi-employee-net').textContent = fmt(empNet);
+  document.getElementById('prsi-employer').textContent = fmt(emplTotal);
+  document.getElementById('prsi-ntfl').textContent = ntflDisplay > 0 ? '(\u0432\u043a\u043b. ' + fmt(ntflDisplay) + ')' : '\u2014';
+  document.getElementById('prsi-annual').textContent = fmt(totalWeek * 52);
+  if (document.getElementById('prsi-note')) document.getElementById('prsi-note').textContent = note;
+}
+
+// ── USC CALCULATOR ──
+function calcUSC() {
+  const income = parseFloat(document.getElementById('usc-income').value) || 0;
+  const age = document.getElementById('usc-age').value;
+  const medcard = document.getElementById('usc-medcard').value;
+
+  let usc = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0;
+  const note = document.getElementById('usc-note');
+
+  if (income <= 13000) {
+    note.textContent = currentLang === 'uk'
+      ? '✅ Дохід нижче €13,000 — USC не нараховується!'
+      : '✅ Доход ниже €13,000 — USC не начисляется!';
+  } else if ((age === 'over70' || medcard === 'yes') && income <= 60000) {
+    usc = (income - 13000) * 0.02;
+    b2 = income > 13000 ? (income - 13000) * 0.02 : 0;
+    note.textContent = currentLang === 'uk'
+      ? '✅ Знижена ставка USC 2% (70+ або повна медкартка, дохід ≤ €60,000)'
+      : '✅ Сниженная ставка USC 2% (70+ или полная медкарта, доход ≤ €60,000)';
+  } else {
+    if (income > 13000) b2 = (Math.min(income, 28700) - 13000) * 0.02;
+    if (income > 28700) b3 = (Math.min(income, 70044) - 28700) * 0.04;
+    if (income > 70044) b4 = (income - 70044) * 0.08;
+    usc = b1 + b2 + b3 + b4;
+    note.textContent = currentLang === 'uk'
+      ? '* USC не нараховується на перші €13,000 доходу та на соціальні виплати DEASP.'
+      : '* USC не начисляется на первые €13,000 дохода и на соцвыплаты DEASP.';
+  }
+
+  document.getElementById('usc-band1').textContent = fmt(b1);
+  document.getElementById('usc-band2').textContent = fmt(b2);
+  document.getElementById('usc-band3').textContent = fmt(b3);
+  document.getElementById('usc-band4').textContent = fmt(b4);
+  document.getElementById('usc-total').textContent = fmt(usc);
+  document.getElementById('usc-monthly').textContent = fmt(usc / 12);
+}
+
+// ── LEAD FORM ──
+function submitLead() {
+  const name = document.getElementById('lead-name').value;
+  const contact = document.getElementById('lead-contact').value;
+  if (!name || !contact) {
+    alert(currentLang === 'uk' ? "Будь ласка, заповніть ім'я та контакт." : "Пожалуйста, заполните имя и контакт.");
+    return;
+  }
+  document.getElementById('formSuccess').style.display = 'block';
+  setTimeout(() => {
+    document.getElementById('formSuccess').style.display = 'none';
+    document.getElementById('lead-name').value = '';
+    document.getElementById('lead-contact').value = '';
+  }, 4000);
+}
+
+// ── UPLOAD ──
+function handleUpload(event) {
+  const files = event.target.files;
+  const list = document.getElementById('uploadList');
+  for (let f of files) {
+    const item = document.createElement('div');
+    item.className = 'upload-item';
+    item.innerHTML = `<span class="upload-item-name">📄 ${f.name}</span><span class="upload-item-size">${(f.size/1024/1024).toFixed(2)} MB</span>`;
+    list.appendChild(item);
+    // Add to blog grid
+    const grid = document.getElementById('contentGrid');
+    const card = document.createElement('div');
+    card.className = 'blog-card';
+    const ext = f.name.split('.').pop().toLowerCase();
+    const isVideo = ['mp4','avi','mov'].includes(ext);
+    card.innerHTML = `
+      <div class="blog-thumb ${isVideo ? 'video' : ''}">${isVideo ? '<div class="play-btn">▶</div>' : '📄'}</div>
+      <div class="blog-body">
+        <div class="blog-tag">${isVideo ? '🎬 Відео' : '📝 Стаття'}</div>
+        <h3>${f.name.replace(/\.[^.]+$/, '')}</h3>
+        <p style="color:var(--gold); font-size:0.8rem">✅ ${currentLang === 'uk' ? 'Щойно завантажено' : 'Только что загружено'}</p>
+      </div>`;
+    grid.prepend(card);
+  }
+  showToast(currentLang === 'uk' ? '✅ Файл додано!' : '✅ Файл добавлен!');
+}
+
+// Drag & drop
+const uploadArea = document.querySelector('.upload-area');
+uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.style.borderColor = 'var(--gold)'; });
+uploadArea.addEventListener('dragleave', () => { uploadArea.style.borderColor = 'rgba(200,169,81,0.3)'; });
+uploadArea.addEventListener('drop', e => {
+  e.preventDefault();
+  uploadArea.style.borderColor = 'rgba(200,169,81,0.3)';
+  const dt = e.dataTransfer;
+  if (dt.files.length) handleUpload({target: {files: dt.files}});
+});
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+function openArticle(id) {
+  document.getElementById(id).classList.add('open');
+}
+
+// Init calculations
+updatePayroll();
+calcTaxCredits();
+calcPRSI();
+calcUSC();
+</script>
+<!-- LEGAL MODAL -->
+<div class="modal-overlay legal-modal" id="legalModal" onclick="if(event.target===this)closeLegalModal()">
+  <div class="modal legal-modal-content">
+    <button class="modal-close" onclick="closeLegalModal()">×</button>
+    <div id="legalContent"></div>
+  </div>
+</div>
+
+<!-- CHECKBOX AGREEMENT MODAL -->
+<div class="modal-overlay" id="agreementModal" style="z-index:10000">
+  <div class="modal" style="max-width:520px">
+    <div class="agreement-box">
+      <div class="agreement-logo">
+        <svg width="80" height="80" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="#0d3320"/><path d="M30 50 L45 65 L70 35" stroke="#c8a951" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3 data-uk="Умови використання" data-ru="Условия использования">Умови використання</h3>
+      <div class="agreement-text">
+        <label class="checkbox-label">
+          <input type="checkbox" id="agreeCheckbox">
+          <span data-uk="Я ознайомився(-лась) з умовами " data-ru="Я ознакомился(-лась) с условиями ">Я ознайомився(-лась) з умовами </span>
+          <a href="#" onclick="openLegalModal('oferta'); return false;" data-uk="Публічної оферти" data-ru="Публичной оферты">Публічної оферти</a>,
+          <a href="#" onclick="openLegalModal('privacy'); return false;" data-uk="Політики конфіденційності" data-ru="Политики конфиденциальности">Політики конфіденційності</a>
+          <span data-uk=" та " data-ru=" и "> та </span>
+          <a href="#" onclick="openLegalModal('disclaimer'); return false;">Disclaimer</a>
+        </label>
+      </div>
+      <button class="btn-primary" id="agreeBtn" disabled onclick="acceptAgreement()" data-uk="Погоджуюсь" data-ru="Согласен">Погоджуюсь</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.legal-modal-content { max-width: 720px; max-height: 80vh; overflow-y: auto; }
+.legal-modal-content h2 { font-size: 1.4rem; color: var(--dark-green); margin-bottom: 16px; }
+.legal-modal-content h3 { font-size: 1.1rem; color: var(--dark-green); margin: 20px 0 12px; }
+.legal-modal-content p { margin-bottom: 12px; line-height: 1.7; }
+.legal-modal-content ul { margin: 12px 0 12px 20px; }
+.legal-modal-content li { margin-bottom: 6px; line-height: 1.6; }
+.legal-modal-content hr { border: none; border-top: 2px solid var(--border); margin: 28px 0; }
+.agreement-box { text-align: center; padding: 20px; }
+.agreement-logo { margin: 0 auto 20px; width: 80px; }
+.agreement-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--dark-green); margin-bottom: 20px; }
+.agreement-text { background: rgba(13,51,32,0.04); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 20px; text-align: left; }
+.checkbox-label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; font-size: 0.9rem; line-height: 1.6; }
+.checkbox-label input[type="checkbox"] { margin-top: 4px; flex-shrink: 0; width: 18px; height: 18px; cursor: pointer; }
+.checkbox-label a { color: var(--dark-green); text-decoration: underline; }
+.checkbox-label a:hover { color: var(--mid-green); }
+#agreeBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+</style>
+
+<script>
+const legalContent = {
+  uk: {
+    oferta: `
+      <h2>ПУБЛІЧНА ОФЕРТА</h2>
+      <p><em>Інформаційно-консультаційна діяльність, модель добровільної підтримки</em></p>
+      <p><strong>Дата набрання чинності:</strong> 18.02.2026<br>
+      <strong>Виконавець:</strong> Кукуруза Інна Володимирівна<br>
+      <strong>Форма діяльності:</strong> Self-Employed<br>
+      <strong>Email:</strong> innakukuruza@gmail.com</p>
+      <hr>
+      <h3>1. Загальні положення</h3>
+      <p>Цей документ є публічною офертою щодо надання інформаційно-консультаційних послуг.</p>
+      <p>Будь-яке звернення через сайт, отримання консультації або здійснення добровільного внеску означає повне прийняття цієї Оферти.</p>
+      <p>Діяльність здійснюється відповідно до законодавства Ірландії та вимог Revenue Commissioners.</p>
+      <h3>2. Статус діяльності</h3>
+      <p>Виконавець не є ліцензованим аудитором або офіційним податковим агентом.</p>
+      <p>Консультації носять інформаційний характер.</p>
+      <p>Виконавець не представляє клієнтів перед державними органами, не подає податкову звітність від імені клієнтів та не має доступу до їхніх особистих податкових кабінетів.</p>
+      <p>Між Виконавцем та користувачем не виникають відносини податкового представництва або фінансового управління.</p>
+      <h3>3. Характер консультацій</h3>
+      <p>Надані консультації:</p>
+      <ul>
+        <li>мають загальноінформаційний характер</li>
+        <li>базуються на чинному законодавстві на момент надання інформації</li>
+        <li>не є індивідуальною юридичною або аудиторською послугою</li>
+        <li>не гарантують конкретного фінансового або податкового результату</li>
+      </ul>
+      <h3>4. Добровільна фінансова підтримка (Donations)</h3>
+      <p>Консультації надаються без встановленої обов'язкової вартості.</p>
+      <p>Користувач може здійснити добровільний внесок (донат) як підтримку діяльності Виконавця.</p>
+      <p>Добровільний внесок:</p>
+      <ul>
+        <li>не є оплатою конкретної послуги</li>
+        <li>не створює додаткових договірних зобов'язань</li>
+      </ul>
+      <h3>5. Відмова від відповідальності</h3>
+      <p>Користувач самостійно приймає всі фінансові та податкові рішення.</p>
+      <p>Виконавець не несе відповідальності за:</p>
+      <ul>
+        <li>фінансові втрати</li>
+        <li>непрямі або побічні збитки</li>
+        <li>рішення, прийняті на основі наданої інформації</li>
+      </ul>
+      <p>Максимальна відповідальність Виконавця обмежується сумою добровільного внеску (якщо він був здійснений).</p>
+      <h3>6. Конфіденційність</h3>
+      <p>Персональні дані обробляються відповідно до вимог GDPR.</p>
+      <h3>7. Юрисдикція</h3>
+      <p>Оферта регулюється законодавством Ірландії. Усі спори вирішуються відповідно до законодавства Ірландії.</p>
+    `,
+    privacy: `
+      <h2>🔐 ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</h2>
+      <p><strong>Дата набрання чинності:</strong> 18.02.2026</p>
+      <p>Я, Кукуруза Інна, здійснюю обробку персональних даних відповідно до GDPR.</p>
+      <hr>
+      <h3>1. Які дані можуть збиратися</h3>
+      <ul>
+        <li>Ім'я</li>
+        <li>Email</li>
+        <li>Телефон</li>
+        <li>Інформація, надана у зверненні</li>
+      </ul>
+      <h3>2. Мета обробки</h3>
+      <ul>
+        <li>Надання консультацій</li>
+        <li>Комунікація з користувачем</li>
+        <li>Виконання вимог законодавства Ірландії</li>
+      </ul>
+      <p>У випадках, передбачених законом, інформація може бути надана державним органам відповідно до вимог Revenue Commissioners.</p>
+      <h3>3. Платіжні провайдери</h3>
+      <p>Для прийому добровільної підтримки можуть використовуватися сторонні платіжні системи (наприклад, Mono).</p>
+      <p>Дані банківських карток обробляються виключно платіжними провайдерами та не зберігаються Виконавцем.</p>
+      <h3>4. Права користувача</h3>
+      <p>Користувач має право:</p>
+      <ul>
+        <li>отримати доступ до своїх даних</li>
+        <li>вимагати їх виправлення</li>
+        <li>вимагати видалення</li>
+        <li>відкликати згоду</li>
+      </ul>
+      <p>Запити надсилати на: <a href="mailto:innakukuruza@gmail.com">innakukuruza@gmail.com</a></p>
+    `,
+    disclaimer: `
+      <h2>⚠️ РОЗШИРЕНИЙ DISCLAIMER</h2>
+      <p>Інформація на сайті та під час консультацій має виключно інформаційний характер.</p>
+      <p>Вона:</p>
+      <ul>
+        <li>не є податковою декларацією</li>
+        <li>не є юридичною консультацією</li>
+        <li>не є бухгалтерським супроводом</li>
+        <li>не створює відносин податкового представництва</li>
+      </ul>
+      <p>Розрахунки (включаючи калькулятор заробітної плати) є орієнтовними.</p>
+      <p><strong>Користувач несе повну відповідальність за використання отриманої інформації.</strong></p>
+    `,
+    cookie: `
+      <h2>🍪 COOKIE POLICY</h2>
+      <p>Сайт може використовувати файли cookie для забезпечення коректної роботи та аналітики.</p>
+      <p>Продовжуючи користування сайтом, користувач погоджується з використанням cookie.</p>
+    `
+  },
+  ru: {
+    oferta: `
+      <h2>ПУБЛИЧНАЯ ОФЕРТА</h2>
+      <p><em>Информационно-консультационная деятельность, модель добровольной поддержки</em></p>
+      <p><strong>Дата вступления в силу:</strong> 18.02.2026<br>
+      <strong>Исполнитель:</strong> Кукуруза Инна Владимировна<br>
+      <strong>Форма деятельности:</strong> Self-Employed<br>
+      <strong>Email:</strong> innakukuruza@gmail.com</p>
+      <hr>
+      <h3>1. Общие положения</h3>
+      <p>Этот документ является публичной офертой по предоставлению информационно-консультационных услуг.</p>
+      <p>Любое обращение через сайт, получение консультации или осуществление добровольного взноса означает полное принятие этой Оферты.</p>
+      <p>Деятельность осуществляется в соответствии с законодательством Ирландии и требованиями Revenue Commissioners.</p>
+      <h3>2. Статус деятельности</h3>
+      <p>Исполнитель не является лицензированным аудитором или официальным налоговым агентом.</p>
+      <p>Консультации носят информационный характер.</p>
+      <p>Исполнитель не представляет клиентов перед государственными органами, не подаёт налоговую отчётность от имени клиентов и не имеет доступа к их личным налоговым кабинетам.</p>
+      <p>Между Исполнителем и пользователем не возникают отношения налогового представительства или финансового управления.</p>
+      <h3>3. Характер консультаций</h3>
+      <p>Предоставленные консультации:</p>
+      <ul>
+        <li>имеют общеинформационный характер</li>
+        <li>базируются на действующем законодательстве на момент предоставления информации</li>
+        <li>не являются индивидуальной юридической или аудиторской услугой</li>
+        <li>не гарантируют конкретного финансового или налогового результата</li>
+      </ul>
+      <h3>4. Добровольная финансовая поддержка (Donations)</h3>
+      <p>Консультации предоставляются без установленной обязательной стоимости.</p>
+      <p>Пользователь может осуществить добровольный взнос (донат) в поддержку деятельности Исполнителя.</p>
+      <p>Добровольный взнос:</p>
+      <ul>
+        <li>не является оплатой конкретной услуги</li>
+        <li>не создаёт дополнительных договорных обязательств</li>
+      </ul>
+      <h3>5. Отказ от ответственности</h3>
+      <p>Пользователь самостоятельно принимает все финансовые и налоговые решения.</p>
+      <p>Исполнитель не несёт ответственности за:</p>
+      <ul>
+        <li>финансовые потери</li>
+        <li>косвенные или побочные убытки</li>
+        <li>решения, принятые на основе предоставленной информации</li>
+      </ul>
+      <p>Максимальная ответственность Исполнителя ограничивается суммой добровольного взноса (если он был осуществлён).</p>
+      <h3>6. Конфиденциальность</h3>
+      <p>Персональные данные обрабатываются в соответствии с требованиями GDPR.</p>
+      <h3>7. Юрисдикция</h3>
+      <p>Оферта регулируется законодательством Ирландии. Все споры разрешаются в соответствии с законодательством Ирландии.</p>
+    `,
+    privacy: `
+      <h2>🔐 ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
+      <p><strong>Дата вступления в силу:</strong> 18.02.2026</p>
+      <p>Я, Кукуруза Инна, осуществляю обработку персональных данных в соответствии с GDPR.</p>
+      <hr>
+      <h3>1. Какие данные могут собираться</h3>
+      <ul>
+        <li>Имя</li>
+        <li>Email</li>
+        <li>Телефон</li>
+        <li>Информация, предоставленная в обращении</li>
+      </ul>
+      <h3>2. Цель обработки</h3>
+      <ul>
+        <li>Предоставление консультаций</li>
+        <li>Коммуникация с пользователем</li>
+        <li>Выполнение требований законодательства Ирландии</li>
+      </ul>
+      <p>В случаях, предусмотренных законом, информация может быть предоставлена государственным органам в соответствии с требованиями Revenue Commissioners.</p>
+      <h3>3. Платёжные провайдеры</h3>
+      <p>Для приёма добровольной поддержки могут использоваться сторонние платёжные системы (например, Mono).</p>
+      <p>Данные банковских карт обрабатываются исключительно платёжными провайдерами и не хранятся Исполнителем.</p>
+      <h3>4. Права пользователя</h3>
+      <p>Пользователь имеет право:</p>
+      <ul>
+        <li>получить доступ к своим данным</li>
+        <li>требовать их исправления</li>
+        <li>требовать удаления</li>
+        <li>отозвать согласие</li>
+      </ul>
+      <p>Запросы отправлять на: <a href="mailto:innakukuruza@gmail.com">innakukuruza@gmail.com</a></p>
+    `,
+    disclaimer: `
+      <h2>⚠️ РАСШИРЕННЫЙ DISCLAIMER</h2>
+      <p>Информация на сайте и во время консультаций имеет исключительно информационный характер.</p>
+      <p>Она:</p>
+      <ul>
+        <li>не является налоговой декларацией</li>
+        <li>не является юридической консультацией</li>
+        <li>не является бухгалтерским сопровождением</li>
+        <li>не создаёт отношений налогового представительства</li>
+      </ul>
+      <p>Расчёты (включая калькулятор заработной платы) являются ориентировочными.</p>
+      <p><strong>Пользователь несёт полную ответственность за использование полученной информации.</strong></p>
+    `,
+    cookie: `
+      <h2>🍪 COOKIE POLICY</h2>
+      <p>Сайт может использовать файлы cookie для обеспечения корректной работы и аналитики.</p>
+      <p>Продолжая пользование сайтом, пользователь соглашается с использованием cookie.</p>
+    `
+  }
+};
+
+function openLegalModal(type) {
+  const lang = currentLang || 'uk';
+  const content = legalContent[lang][type] || legalContent.uk[type];
+  document.getElementById('legalContent').innerHTML = content;
+  document.getElementById('legalModal').classList.add('open');
+}
+
+function closeLegalModal() {
+  document.getElementById('legalModal').classList.remove('open');
+}
+
+function acceptAgreement() {
+  document.getElementById('agreementModal').style.display = 'none';
+  localStorage.setItem('termsAccepted', 'true');
+}
+
+// Enable agree button when checkbox is checked
+document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.getElementById('agreeCheckbox');
+  const btn = document.getElementById('agreeBtn');
+  if (checkbox && btn) {
+    checkbox.addEventListener('change', function() {
+      btn.disabled = !this.checked;
+    });
+  }
+  
+  // Agreement modal is now disabled on first visit
+  // Users can open it via legal buttons at bottom-right
+  // Uncomment below to enable popup on first visit:
+  /*
+  if (!localStorage.getItem('termsAccepted')) {
+    setTimeout(() => {
+      document.getElementById('agreementModal').style.display = 'flex';
+    }, 1000);
+  }
+  */
+});
+</script>
+</body>
+<!-- FLOATING LEGAL BUTTONS -->
+<div class="legal-buttons">
+  <button onclick="openLegalModal('oferta')" data-uk="Оферта" data-ru="Оферта">Оферта</button>
+  <button onclick="openLegalModal('privacy')" data-uk="Конфіденційність" data-ru="Конфиденциальность">Конфіденційність</button>
+  <button onclick="openLegalModal('disclaimer')">Disclaimer</button>
+  <button onclick="openLegalModal('cookie')">Cookie</button>
+</div>
+
+<style>
+.legal-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 998;
+}
+.legal-buttons button {
+  background: rgba(13,51,32,0.85);
+  backdrop-filter: blur(8px);
+  color: var(--white);
+  border: 1px solid rgba(200,169,81,0.3);
+  padding: 6px 12px;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.legal-buttons button:hover {
+  background: var(--dark-green);
+  border-color: var(--gold);
+  transform: translateX(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+@media (max-width: 640px) {
+  .legal-buttons {
+    bottom: 12px;
+    right: 12px;
+    gap: 4px;
+  }
+  .legal-buttons button {
+    font-size: 0.65rem;
+    padding: 5px 10px;
+  }
+}
+</style>
+</html>
